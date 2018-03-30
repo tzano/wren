@@ -1,0 +1,34 @@
+version: '3.1'
+
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+  kafka:
+    image: spotify/kafka:latest
+    ports:
+      - 2181:2181
+      - 9092:9092
+    hostname: kafka
+
+  elasticsearch:
+    image: elasticsearch:2.0
+    container_name: es
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+
+  app:
+    build: .
+    ports:
+      - 8000:8000
+
+    links:
+      - mongodb
+      - kafka
+      - elasticsearch
+    depends_on:
+      - kafka
+      - mongodb
+      - elasticsearch
