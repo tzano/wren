@@ -94,7 +94,6 @@ class Podcast():
                 "keywords": self.keywords,
                 "category": self.category,
                 "language": self.language,
-                "concepts": self.concepts,
                 "media_type": "Podcast",
                 "news_source": self.media_org,
                 "popularity": self.popularity_summary,

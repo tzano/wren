@@ -12,6 +12,11 @@ import requests
 from resources.constants import EMPTY_STR, EMPTY_LIST, EMPTY_DICT, EN_LANG, APP_KEYS_FILE, CALAIS_KEY, CONFIG_FNAME, \
     PAR_DIR, CONFIG_DIR, ARTICLES, PODCASTS, VIDEOS, ARTICLE, \
     PODCAST, VIDEO
+from data_discovery.content_parser.calais import CalaisAPI
+from data_discovery.content_parser.dbpedia import DbpediaAPI
+from data_discovery.sentiment_analyzer.labmt import LabMT
+from data_discovery.sentiment_analyzer.sentistrength import SentiStrength
+from data_discovery.social_popularity.social_shares import SocialShares
 
 
 class NewsMediaOrg():
@@ -45,7 +50,7 @@ class NewsMediaOrg():
         """ str """
         return self.news_media_org
 
-    def get_rss_feed(self, media_type, category='All'):
+    def get_rss_feed(self, media_type, category="All"):
         """
         get news feed url
 
@@ -66,7 +71,7 @@ class NewsMediaOrg():
         try:
             url = config_json[media_type][self.news_media_org][category]
         except Exception as e:
-            logging.warn('Invalid name for category')
+            logging.warn("Invalid name for category")
             url = None
 
         return url
@@ -81,8 +86,8 @@ class NewsMediaOrg():
         :return: generator of latest articles
         """
         feed = feedparser.parse(url)
-        for entry in feed['entries']:
-            yield ({'title': entry.title, 'url': entry.link, 'pub_date': entry.get('published', ''),
+        for entry in feed["entries"]:
+            yield ({"title": entry.title, "url": entry.link, "pub_date": entry.get("published", ""),
                     "summary": entry.get("summary", "")})
 
     def get_news_media_source(self):
@@ -127,7 +132,7 @@ class NewsMediaOrg():
             dbpedia_api = DbpediaAPI(api_key=self.app_keys[CALAIS_KEY])
             dbpedia_result = dbpedia_api.extract_entities(text=newsmedia_text)
 
-        return {'Calais': calais_result, 'Dbpedia': dbpedia_result}
+        return {"Calais": calais_result, "Dbpedia": dbpedia_result}
 
     def score_popularity(self, newsmedia_url):
         """
@@ -147,82 +152,82 @@ class NewsMediaOrg():
 
     def get_article_url(self, entry):
         """
-        get the article's url
+        get the article"s url
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        return entry.get('url', EMPTY_STR)
+        return entry.get("url", EMPTY_STR)
 
     def get_article_headline(self, entry):
         """
-        get the article's headline
+        get the article"s headline
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        return entry.get('title', EMPTY_STR)
+        return entry.get("title", EMPTY_STR)
 
     def get_article_pub_date(self, entry):
         """
-        get the article's publication date
+        get the article"s publication date
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        return entry.get('pub_date', EMPTY_STR)
+        return entry.get("pub_date", EMPTY_STR)
 
     def get_article_summary(self, entry):
         """
-        get the article's summary
+        get the article"s summary
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        return entry.get('summary', EMPTY_STR)
+        return entry.get("summary", EMPTY_STR)
 
     def get_article_content(self, entry):
         """
-        get the article's content
+        get the article"s content
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_article_html(self, entry):
         """
-        get the article's html
+        get the article"s html
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_article_metadata(self, entry):
         """
-        get the article's metadata
+        get the article"s metadata
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_DICT
 
     def get_article_authors(self, entry):
@@ -234,57 +239,57 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_article_thumbnail(self, entry):
         """
-        get the article's thumbnail
+        get the article"s thumbnail
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_article_images(self, entry):
         """
-        get the article's set of images
+        get the article"s set of images
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_article_videos(self, entry):
         """
-        get the article's set of videos
+        get the article"s set of videos
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_article_keywords(self, entry):
         """
-        get the article's keywords
+        get the article"s keywords
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_article_category(self, entry):
         """
-        get the article's category
+        get the article"s category
 
         :param entry: dict that holds main article information (url, title,.. etc)
         :type  entry: :py:class:`dict`
@@ -334,24 +339,29 @@ class NewsMediaOrg():
                 article_thumbnail = self.get_article_thumbnail(entry)
                 article_source = self.get_news_media_source()
 
+                # popularity_summary = self.score_popularity(article_url)
+                # sentiment_score = self.score_sentiment(article_summary)
+                text_entities = self.extract_entities(article_summary)
 
                 return Article(article_headline=article_headline, article_url=article_url,
                                pub_date=article_pub_dt, summary=article_summary, article_content=article_content,
                                article_html=article_html, article_metadata=article_metadata, authors=article_authors,
                                thumbnail=article_thumbnail, images=article_images, videos=article_videos,
                                keywords=article_keywords,
-                               category=article_category, language=article_language, news_media_org=article_source)
+                               category=article_category, language=article_language, news_media_org=article_source, entities= text_entities)
 
             else:
-                logging.error("Cannot fetch the article's url!")
+                logging.error("Cannot fetch the article\'s url!")
                 return None
 
         except Exception as e:
+            print(e)
+            rrrr
             logging.error("Cannot parse article. Download operation may have failed!")
             return None
 
 
-    def parse_articles(self, category='All'):
+    def parse_articles(self, category="All"):
         """
         parse the latest articles
 
@@ -367,29 +377,29 @@ class NewsMediaOrg():
 
     def get_podcast_title(self, entry):
         """
-        get the podcast's title
+        get the podcast"s title
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        return entry.get('title', EMPTY_STR)
+        return entry.get("title", EMPTY_STR)
 
     def get_podcast_url(self, entry):
         """
-        get the podcast's url
+        get the podcast"s url
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        return entry.get('url', EMPTY_STR)
+        return entry.get("url", EMPTY_STR)
 
     def get_podcast_pub_date(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
@@ -397,11 +407,11 @@ class NewsMediaOrg():
         :return:
         """
 
-        return entry.get('pub_date', EMPTY_STR)
+        return entry.get("pub_date", EMPTY_STR)
 
     def get_podcast_summary(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
@@ -409,11 +419,11 @@ class NewsMediaOrg():
 
         :return:
         """
-        return entry.get('summary', EMPTY_STR)
+        return entry.get("summary", EMPTY_STR)
 
     def get_podcast_content(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -422,11 +432,11 @@ class NewsMediaOrg():
 
         :return:
         """
-        return entry.get('summary', EMPTY_STR)
+        return entry.get("summary", EMPTY_STR)
 
     def get_podcast_subtitle(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -435,12 +445,12 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_podcast_metadata(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -449,12 +459,12 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_DICT
 
     def get_podcast_authors(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -463,12 +473,12 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_podcast_thumbnail(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -477,12 +487,12 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_podcast_images(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -491,12 +501,12 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_podcast_keywords(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -505,12 +515,12 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_podcast_category(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -519,12 +529,12 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_podcast_language(self, entry):
         """
-        get the podcast's
+        get the podcast"s
 
 
 
@@ -549,7 +559,7 @@ class NewsMediaOrg():
             podcast_url = self.get_podcast_url(entry)
             response = requests.get(podcast_url)
             if response.status_code == 200:
-                # You can use BeautifulSoup after reading the Website's Terms of Use
+                # You can use BeautifulSoup after reading the Website\'s Terms of Use
                 # soup = BeautifulSoup(response.text, "html.parser")
                 podcast_title = self.get_podcast_title(entry)
                 podcast_pub_dt = self.get_podcast_pub_date(entry)
@@ -564,23 +574,27 @@ class NewsMediaOrg():
                 podcast_thumbnail = self.get_podcast_thumbnail(entry)
                 podcast_source = self.get_news_media_source()
 
+                popularity_summary = self.score_popularity(podcast_url)
+                sentiment_score = self.score_sentiment(podcast_summary)
+                text_entities = self.extract_entities(podcast_summary)
 
                 return Podcast(title=podcast_title, podcast_url=podcast_url,
                                pub_date=podcast_pub_dt, summary=podcast_summary, podcast_content=podcast_content,
                                podcast_metadata=podcast_metadata, authors=podcast_authors,
                                thumbnail=podcast_thumbnail, images=podcast_images,
                                keywords=podcast_keywords,
-                               category=podcast_category, language=podcast_language, news_media_org=podcast_source)
+                               category=podcast_category, language=podcast_language, news_media_org=podcast_source,
+                               popularity=popularity_summary, sentiment=sentiment_score, entities=text_entities)
 
             else:
-                logging.error("Cannot fetch the article's url!")
+                logging.error("Cannot fetch the article\'s url!")
                 return None
 
         except Exception as e:
             logging.error("Cannot parse article. Download operation may have failed!")
             return None
 
-    def parse_podcasts(self, category='All'):
+    def parse_podcasts(self, category="All"):
         """
         parse the latest articles
 
@@ -596,7 +610,7 @@ class NewsMediaOrg():
 
     def get_video_title(self, entry):
         """
-        get the video's
+        get the video"s
 
 
 
@@ -605,11 +619,11 @@ class NewsMediaOrg():
 
         :return:
         """
-        return entry.get('title', EMPTY_STR)
+        return entry.get("title", EMPTY_STR)
 
     def get_video_url(self, entry):
         """
-        get the video's
+        get the video"s
 
 
 
@@ -618,11 +632,11 @@ class NewsMediaOrg():
 
         :return:
         """
-        return entry.get('url', EMPTY_STR)
+        return entry.get("url", EMPTY_STR)
 
     def get_video_pub_date(self, entry):
         """
-        get the video's
+        get the video"s
 
 
 
@@ -631,70 +645,70 @@ class NewsMediaOrg():
 
         :return:
         """
-        return entry.get('pub_date', EMPTY_STR)
+        return entry.get("pub_date", EMPTY_STR)
 
     def get_video_summary(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        return entry.get('summary', EMPTY_STR)
+        return entry.get("summary", EMPTY_STR)
 
     def get_video_content(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_video_subtitle(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_video_metadata(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_DICT
 
     def get_video_authors(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_video_thumbnail(self, entry):
         """
-        get the video's
+        get the video"s
 
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
@@ -702,48 +716,48 @@ class NewsMediaOrg():
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_video_images(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_video_keywords(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_LIST
 
     def get_video_category(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
 
         :return:
         """
-        logging.warn("This functionality is not implemented yet. You should check the Website's Terms of Use")
+        logging.warn("This functionality has been disabled. Please check the Website\'s Terms of Use")
         return EMPTY_STR
 
     def get_video_language(self, entry):
         """
-        get the video's
+        get the video"s
 
         :param entry: dict that holds main podcast information (url, title,.. etc)
         :type  entry: :py:class:`dict`
@@ -765,7 +779,7 @@ class NewsMediaOrg():
             video_url = self.get_video_url(entry)
             response = requests.get(video_url)
             if response.status_code == 200:
-                # You can use BeautifulSoup after reading the Website's Terms of Use
+                # You can use BeautifulSoup after reading the Website\'s Terms of Use
                 # soup = BeautifulSoup(response.text, "html.parser")
                 video_headline = self.get_video_title(entry)
                 video_pub_dt = self.get_video_pub_date(entry)
@@ -780,22 +794,27 @@ class NewsMediaOrg():
                 video_thumbnail = self.get_video_thumbnail(entry)
                 video_source = self.get_news_media_source()
 
+                popularity_summary = self.score_popularity(video_url)
+                sentiment_score = self.score_sentiment(video_summary)
+                text_entities = self.extract_entities(video_summary)
+
                 return Video(video_headline=video_headline, video_url=video_url,
                              pub_date=video_pub_dt, summary=video_summary, video_content=video_content,
                              video_metadata=video_metadata, authors=video_authors,
                              thumbnail=video_thumbnail, images=video_images,
                              keywords=video_keywords,
-                             category=video_category, language=video_language, news_media_org=video_source)
+                             category=video_category, language=video_language, news_media_org=video_source,
+                             popularity=popularity_summary, sentiment=sentiment_score, entities=text_entities)
 
             else:
-                logging.error("Cannot fetch the article's url!")
+                logging.error("Cannot fetch the article\'s url!")
                 return None
 
         except Exception as e:
             logging.error("Cannot parse article. Download operation may have failed!")
             return None
 
-    def parse_videos(self, category='All'):
+    def parse_videos(self, category="All"):
         """
         parse the latest videos
 

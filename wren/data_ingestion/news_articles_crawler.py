@@ -45,9 +45,7 @@ class NewsArticlesCrawler(Scheduler):
 
         while True:
             try:
-                logging.info("Crawling articles")
                 for article in self.get_news_articles():
-                    logging.info("Sending article to Kafka")
                     if article:
                         self.kafka_producer.send(self.kafka_topic, str(article.json()))
                 time.sleep(self.seconds)

@@ -40,7 +40,6 @@ class DataFetcher(Thread):
                 self.mongo_db_collection.insert(ast.literal_eval(message.value))
             except pymongo.errors.DuplicateKeyError:
                 pass
-            logging.info("Article has been inserted to DB")
 
     def clean_message(self, message):
         """
