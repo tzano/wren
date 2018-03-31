@@ -1,0 +1,14 @@
+mongodb:
+  host: "172.19.0.3"
+  port: 27017
+  db_name: 'wren_db'
+  articles: 'articles'
+  podcasts: 'podcasts'
+  videos: 'videos'
+
+kafka:
+  host: "172.19.0.2"
+  port: 9092
+  Articles: 'articles'
+  Podcasts: 'podcasts'
+  Videos: 'videos'

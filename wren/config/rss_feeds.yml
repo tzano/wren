@@ -1,0 +1,253 @@
+Articles:
+  AlJazeera:
+    "All": "http://www.aljazeera.com/xml/rss/all.xml"
+
+  NYPost:
+    "All": "http://nypost.com/feed/"
+
+  BBC:
+    "All": "http://feeds.bbci.co.uk/news/rss.xml"
+    "World": "http://feeds.bbci.co.uk/news/world/rss.xml"
+    "Africa": "http://feeds.bbci.co.uk/news/world/africa/rss.xml"
+    "Asia": "http://feeds.bbci.co.uk/news/world/asia/rss.xml"
+    "Europe": "http://feeds.bbci.co.uk/news/world/europe/rss.xml"
+    "Latin_America": "http://feeds.bbci.co.uk/news/world/latin_america/rss.xml"
+    "Middle_East": "http://feeds.bbci.co.uk/news/world/middle_east/rss.xml"
+    "North_America": "http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+    "UK": "http://feeds.bbci.co.uk/news/uk/rss.xml"
+    "England": "http://feeds.bbci.co.uk/news/england/rss.xml"
+    "Northern_Ireland": "http://feeds.bbci.co.uk/news/northern_ireland/rss.xml"
+    "Scotland": "http://feeds.bbci.co.uk/news/scotland/rss.xml"
+    "Wales": "http://feeds.bbci.co.uk/news/wales/rss.xml"
+    "Business": "http://feeds.bbci.co.uk/news/business/rss.xml"
+    "Politics": "http://feeds.bbci.co.uk/news/politics/rss.xml"
+    "Health": "http://feeds.bbci.co.uk/news/health/rss.xml"
+    "Education": "http://feeds.bbci.co.uk/news/education/rss.xml"
+    "Science": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+    "Technology": "http://feeds.bbci.co.uk/news/technology/rss.xml"
+    "Entertainment": "http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+    "Latest": "http://feeds.bbci.co.uk/news/system/latest_published_content/rss.xml"
+
+  Reuters:
+    "All": "http://feeds.reuters.com/reuters/topNews"
+    "Art": "http://feeds.reuters.com/news/artsculture"
+    "Business": "http://feeds.reuters.com/reuters/businessNews"
+    "Companies": "http://feeds.reuters.com/reuters/companyNews"
+    "Entertainment": "http://feeds.reuters.com/reuters/entertainment"
+    "Environment": "http://feeds.reuters.com/reuters/environment"
+    "Health": "http://feeds.reuters.com/reuters/healthNews"
+    "Lifestyle": "http://feeds.reuters.com/reuters/lifestyle"
+    "Media": "http://feeds.reuters.com/news/reutersmedia"
+    "Economy": "http://feeds.reuters.com/news/wealth"
+    "Politics": "http://feeds.reuters.com/Reuters/PoliticsNews"
+    "Science": "http://feeds.reuters.com/reuters/scienceNews"
+    "Sport": "http://feeds.reuters.com/reuters/sportsNews"
+    "Technology": "http://feeds.reuters.com/reuters/technologyNews"
+    "North_America": "http://feeds.reuters.com/Reuters/domesticNews"
+    "World": "http://feeds.reuters.com/Reuters/worldNews"
+    "Odd": "http://feeds.reuters.com/reuters/oddlyEnoughNews"
+
+  NYTimes:
+    "All": "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+    "World": "http://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    "Africa": "http://rss.nytimes.com/services/xml/rss/nyt/Africa.xml"
+    "Americas": "http://rss.nytimes.com/services/xml/rss/nyt/Americas.xml"
+    "Asia": "http://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml"
+    "Europe": "http://rss.nytimes.com/services/xml/rss/nyt/Europe.xml"
+    "Middle_East": "http://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml"
+    "North_America": "http://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+    "Education": "http://rss.nytimes.com/services/xml/rss/nyt/Education.xml"
+    "Politics": "http://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"
+    "Business": "http://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+    "Environment": "http://rss.nytimes.com/services/xml/rss/nyt/Environment.xml"
+    "Economy": "http://rss.nytimes.com/services/xml/rss/nyt/Economy.xml"
+    "Money": "http://rss.nytimes.com/services/xml/rss/nyt/YourMoney.xml"
+    "Technology": "http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+    "Sport": "http://rss.nytimes.com/services/xml/rss/nyt/Sports.xml"
+    "American_Football": "http://rss.nytimes.com/services/xml/rss/nyt/ProFootball.xml"
+    "Science": "http://rss.nytimes.com/services/xml/rss/nyt/Science.xml"
+    "Health": "http://rss.nytimes.com/services/xml/rss/nyt/Health.xml"
+    "Art": "http://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+    "Travel": "http://rss.nytimes.com/services/xml/rss/nyt/Travel.xml"
+
+  WSJ:
+    "All": "http://www.wsj.com/xml/rss/3_7085.xml"
+
+  HuffingtonPost:
+    "All": 'http://www.huffingtonpost.com/feeds/verticals/politics/index.xml'
+
+  TheIndependent:
+    "All": "http://www.independent.co.uk/news/world/rss"
+
+  Telegraph:
+    "All": "http://www.telegraph.co.uk/news/worldnews/rss"
+    "UK_News": "http://www.telegraph.co.uk/news/uknews/rss"
+    "Middle_East": "http://www.telegraph.co.uk/news/worldnews/middleeast/rss"
+    "World_News": "http://www.telegraph.co.uk/news/worldnews/rss"
+    "Politics": "http://www.telegraph.co.uk/news/politics/rss"
+    "Business": "http://www.telegraph.co.uk/news/business/rss"
+    "Finance": "http://www.telegraph.co.uk/finance/rss"
+    "Technology": "http://www.telegraph.co.uk/technology/rss"
+    "Entertainment": "http://www.telegraph.co.uk/culture/rss" 
+
+  GoogleNews:
+    "All": "https://news.google.com/news?cf=all"
+    "Top": "https://news.google.com/"
+    "Technology": "https://news.google.com/news/section?pz=1&cf=all&topic=tc&siidp=d0efb8be4bc7ba6cc8df32977c99fad01f8b"
+    "Science": "https://news.google.com/news/section?pz=1&cf=all&topic=snc&siidp=d0efb8be4bc7ba6cc8df32977c99fad01f8b"
+    "Health": "https://news.google.com/news/section?pz=1&cf=all&topic=m&siidp=d0efb8be4bc7ba6cc8df32977c99fad01f8b"
+    "World": "https://news.google.com/news/section?pz=1&cf=all&topic=w&siidp=d0efb8be4bc7ba6cc8df32977c99fad01f8b"
+    "US": "https://news.google.com/news/section?pz=1&cf=all&topic=n&siidp=d0efb8be4bc7ba6cc8df32977c99fad01f8b"
+    "Business": "https://news.google.com/news/section?pz=1&cf=all&topic=b&siidp=d0efb8be4bc7ba6cc8df32977c99fad01f8b"
+    "Entertainment": "https://news.google.com/news/section?pz=1&cf=all&topic=e&siidp=df2ca71c8c66d6de2740fe990f310a585159&ict=ln"
+    "Sports": "https://news.google.com/news/section?pz=1&cf=all&topic=s&siidp=8ee0c495033e0b8db8248317af6767f35d79&ict=ln"
+
+  lemonde:
+    "All": "http://rss.lemonde.fr/c/205/f/3052/index.rss"
+
+  WashingtonPost: 
+    "All": 'http://feeds.washingtonpost.com/rss/world'
+    "Politics": 'http://feeds.washingtonpost.com/rss/politics'
+    "Local": 'http://feeds.washingtonpost.com/rss/local'
+    "National": 'http://feeds.washingtonpost.com/rss/national'
+    "Business": 'http://feeds.washingtonpost.com/rss/business'
+
+  ScientificAmerican:
+    "Global": 'http://rss.sciam.com/ScientificAmerican-Global'
+    "Science": 'http://rss.sciam.com/basic-science'
+    "Biology": 'http://rss.sciam.com/sciam/biology'
+    "Climate": 'http://rss.sciam.com/sciam/climate'
+    "Computing": 'http://rss.sciam.com/sciam/computing'
+    "Energy": 'http://rss.sciam.com/sciam/energy-and-sustainability'
+    "Ethics": 'http://rss.sciam.com/sciam/ethics'
+    "Evolution": 'http://rss.sciam.com/sciam/evolution'
+    "Health": 'http://rss.sciam.com/sciam/health-and-medicine'
+    "Math": 'http://rss.sciam.com/sciam/math'
+    "Brain": 'http://rss.sciam.com/sciam/mind-and-brain'
+    "Neuroscience": 'http://rss.sciam.com/sciam/neuroscience'
+    "Physics": 'http://rss.sciam.com/sciam/physics'
+    "Psychology": 'http://rss.sciam.com/sciam/psychology'
+    "Space": 'http://rss.sciam.com/sciam/space'
+    "Technology": 'http://rss.sciam.com/sciam/technology'
+    "Weather": 'http://rss.sciam.com/sciam/weather'
+
+  NewYorker:
+    "All": 'http://www.newyorker.com/feed/everything'
+    "Articles": 'http://www.newyorker.com/feed/articles'
+    "Magazine": 'http://www.newyorker.com/feed/magazine'
+    "News": 'http://www.newyorker.com/feed/news'
+    "Culture": 'http://www.newyorker.com/feed/culture'
+    "Humor": 'http://www.newyorker.com/feed/humor'
+    "Books": 'http://www.newyorker.com/feed/books'
+    "Technology": 'http://www.newyorker.com/feed/tech'
+    "Business": 'http://www.newyorker.com/feed/business'
+
+  DeuscheWelle:
+    "All": "http://rss.dw.de/rdf/rss-en-all"
+
+  WSJ: 
+    "All": "http://www.wsj.com/xml/rss/3_7085.xml"
+
+  Vice:
+    "All": "http://www.vice.com/rss"
+
+  Vox: 
+    "All": "http://www.vox.com/rss/index.xml"
+
+  FoxNews:
+    "All": "http://feeds.foxnews.com/foxnews/latest"
+    "World": "http://feeds.foxnews.com/foxnews/world"
+    "US": "http://feeds.foxnews.com/foxnews/national"
+    "Tech": "http://feeds.foxnews.com/foxnews/tech"
+    "Science": "http://feeds.foxnews.com/foxnews/science"
+    "Most_Popular": "http://feeds.foxnews.com/foxnews/most-popular"
+
+  Fivethirtyeight:
+    "All": "https://fivethirtyeight.com/all/feed"
+
+  YCombinator:
+    "All": "https://news.ycombinator.com/rss"
+
+  ABCNews:
+    "All": "http://feeds.abcnews.com/abcnews/usheadline"
+
+  CNN:
+    "All": "http://rss.cnn.com/rss/cnn_world.rss"
+    "US": "http://rss.cnn.com/rss/cnn_us.rss"
+    "Technology": "http://rss.cnn.com/rss/cnn_tech.rss"
+
+  Guardian:
+    "All": "http://feeds.guardian.co.uk/theguardian/rss"
+    "UK": 'https://www.theguardian.com/uk/rss'
+    "World": 'https://www.theguardian.com/world/rss'
+    "Culture": 'https://www.theguardian.com/uk/culture/rss'
+    "Education": 'https://www.theguardian.com/education/rss'
+    "Science": 'https://www.theguardian.com/science/rss'
+
+  TheAtlantic:
+    "All": 'http://www.theatlantic.com/feed/all/'
+    "Best": 'http://www.theatlantic.com/feed/best-of/'
+    "Politics": 'http://www.theatlantic.com/feed/channel/politics/'
+    "Entertainment": 'http://www.theatlantic.com/feed/channel/entertainment/'
+    "Technology": 'http://www.theatlantic.com/feed/channel/technology/'
+    "Health": 'http://www.theatlantic.com/feed/channel/health/'
+    "International": 'http://www.theatlantic.com/feed/channel/international/'
+    "National": 'http://www.theatlantic.com/feed/channel/national/'
+    "Science": 'http://www.theatlantic.com/feed/channel/science/'
+    "Education": 'http://www.theatlantic.com/feed/channel/education/'
+    "News": 'http://www.theatlantic.com/feed/channel/news/'
+
+  Economist: 
+    "All": 'http://www.economist.com/feeds/print-sections/all/all.xml'
+    "Business": 'http://www.economist.com/sections/business-finance/rss.xml'
+    "Economics": 'http://www.economist.com/sections/economics/rss.xml'
+    "Technology": 'http://www.economist.com/sections/science-technology/rss.xml'
+    "Culture": 'http://www.economist.com/sections/culture/rss.xml'
+    "US": 'http://www.economist.com/sections/united-states/rss.xml'
+    "Middle_East": 'http://www.economist.com/sections/middle-east-africa/rss.xml'
+    "International": 'http://www.economist.com/sections/international/rss.xml'
+
+  USAToday:
+    "All": "http://rssfeeds.usatoday.com/news-opinion"
+
+  ChinaDaily: 
+    "All": "http://www.chinadaily.com.cn/rss_c/caijing.xml"
+
+  CBSNews:
+    "All": 'http://www.cbsnews.com/latest/rss/main'
+    "US": 'http://www.cbsnews.com/latest/rss/us'
+    "Sci_Tech": 'http://www.cbsnews.com/latest/rss/tech'
+    "World": 'http://www.cbsnews.com/latest/rss/world'
+    "Politics": 'http://www.cbsnews.com/latest/rss/politics'
+
+Podcasts:
+  WSJ:
+    "Andy Jordan's Tech Diary": "http://feeds.wsjonline.com/wsj/podcast_tech_diary"
+    "The Sports Retort": "http://feeds.feedburner.com/wsj/podcast_the_sports_retort"
+    "Wall Street Journal on Small Business": "http://feeds.feedburner.com/YourMoneyNowTheSmallBusinessReport"
+    "Wall Street Journal This Morning": "http://feeds.feedburner.com/thismorningamericasfirstnews"
+    "Wall Street Journal's Your Money Matters": "http://feeds.wsjonline.com/wsj/podcast_your_money_matters?format=xml"
+    "Wall Street Journal What's News": "http://feeds.wsjonline.com/wsj/podcast_wall_street_journal_whats_news?format=xml"
+    "MarketWatch Morning Stock Talk": "http://feeds.marketwatch.com/marketwatch/podcasts/marketwatchmorningstocktalk?format=xml"
+    "MarketWatch News Break": "http://feeds.feedburner.com/marketwatch/podcasts/MarketWatchNewsBreak?format=xml"
+    "Money, Markets & More": "http://feeds.marketwatch.com/marketwatch/podcasts/MoneyMarketsMore?format=xml"
+    "Wall Street Journal's The News Hub": "http://feeds.wsjonline.com/wsj/podcast_the_news_hub?format=xml"
+    "Watching Your Wallet": "http://feeds.wsjonline.com/wsj/podcast_Watching_Your_Wallet?format=xml"
+    "This Week in Barron's": "http://feeds.barrons.info/barrons/podcasts/thisweekinbarrons"
+    "Walt Mossberg's Personal Technology": "http://www.wsj.com/xml/rss/3_7143.xml"
+    "The Middle Seat": "http://feeds.wsjonline.com/wsj/podcast_the_middle_seat?format=xml"
+  
+  NYTimes:
+    "The Daily": "http://feeds.podtrac.com/zKq6WZZLTlbM"
+    "The Book Review": "https://feeds.podtrac.com/hyqg9sb75nOH"
+    "Inside The Times": "https://feeds.podtrac.com/YzEuw3pWUpBj"
+    "Popcast": "https://feeds.podtrac.com/_-sJYvsFQrn_"
+    "The Run-Up": "https://feeds.podtrac.com/pLNosqouzJak"
+    "Still Processing": "https://feeds.podtrac.com/LhS5ax2CPGou"
+
+
+
+Videos:
+  AlJazeera:
+    "All": 'http://www.cbsnews.com/latest/rss/main'
+
