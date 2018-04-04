@@ -139,6 +139,7 @@ In the following part, we summarize the set of intents that we built for our cha
 - Is there anything new about [US election](findNewsContent_eventName)
 - Show me everything about [US election](findNewsContent_eventName)
 - New posts about [US election](findNewsContent_eventName)
+- I am looking for an [article](findNewsContent_contentType) entitled [“Deporting Dreamers”](findNewsContent_contentItemName)
 ```
 
 ## Select a content Item
@@ -156,14 +157,14 @@ In the following part, we summarize the set of intents that we built for our cha
 ```
 - [What](getContentInfo_selectCriteria) is the title of the [article](getContentInfo_contentType) 
 - [Where](getContentInfo_selectCriteria)  did this [article](getContentInfo_contentType) has been published
-- [When](getContentInfot_selectCriteria)  did this [article](getContentInfo_contentType) come out
+- [When](getContentInfo_selectCriteria)  did this [article](getContentInfo_contentType) come out
 - [Who](getContentInfo_selectCriteria)  has been mentioned in this [article](getContentInfo_contentType) 
 - [What](getContentInfot_selectCriteria)  are the places that have been mentioned in this [article](getContentInfo_contentType) 
-- [Who](getContentInfot_selectCriteria)  published this [article](getContentInfo_contentType) 
-- [Who](getContentInfot_selectCriteria)  published this [article](getContentInfo_contentType) 
-- [What](getContentInfot_selectCriteria)  is the topic covered in this [article](getContentInfo_contentType)
-- I am looking for an [article](findNewsContent_contentType) entitled [“Deporting Dreamers”](findNewsContent_contentItemName)
-- Where did this [article](getSummary_contentType) has been published
+- [Who](getContentInfo_selectCriteria)  published this [article](getContentInfo_contentType) 
+- [Who](getContentInfo_selectCriteria)  published this [article](getContentInfo_contentType) 
+- [What](getContentInfo_selectCriteria)  is the topic covered in this [article](getContentInfo_contentType)
+
+- Where did this [article](getContentInfo_contentType) has been published
 ```
 
 
