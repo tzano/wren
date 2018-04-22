@@ -1,0 +1,11 @@
+rasa_nlu[spacy]
+spacy
+klein
+sklearn_crfsuite
+sklearn
+Flask
+rasa-core
+spacy
+scipy
+sklearn-crfsuite
+pyliblzma

@@ -1,0 +1,9 @@
+pyyaml
+requests
+kafka-python
+feedparser
+labMTsimple
+jinja2
+numpy
+pymongo
+python-dateutil
