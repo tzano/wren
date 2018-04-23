@@ -341,22 +341,20 @@ class NewsMediaOrg():
 
                 # popularity_summary = self.score_popularity(article_url)
                 # sentiment_score = self.score_sentiment(article_summary)
-                text_entities = self.extract_entities(article_summary)
+                text_entities =  {"Calais": {}, "Dbpedia": {}} #self.extract_entities(article_summary)
 
                 return Article(article_headline=article_headline, article_url=article_url,
                                pub_date=article_pub_dt, summary=article_summary, article_content=article_content,
                                article_html=article_html, article_metadata=article_metadata, authors=article_authors,
                                thumbnail=article_thumbnail, images=article_images, videos=article_videos,
-                               keywords=article_keywords,
-                               category=article_category, language=article_language, news_media_org=article_source, entities= text_entities)
+                               keywords=article_keywords, media_org= article_source, entities= text_entities,
+                               category=article_category, language=article_language )
 
             else:
                 logging.error("Cannot fetch the article\'s url!")
                 return None
 
         except Exception as e:
-            print(e)
-            rrrr
             logging.error("Cannot parse article. Download operation may have failed!")
             return None
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from resources.constants import EMPTY_STR, EMPTY_LIST, EMPTY_DICT
-
+from dateutil import parser
 
 class Podcast():
     """
@@ -83,7 +83,7 @@ class Podcast():
     def json(self):
         return {"title": self.title,
                 "podcast_url": self.podcast_url,
-                "pub_date": self.pub_date,
+                "pub_date": parser.parse(self.pub_date) if dt_to_str else self.pub_date,
                 "summary": self.summary,
                 "podcast_content": self.podcast_content,
                 "podcast_subtitle": self.podcast_subtitle,

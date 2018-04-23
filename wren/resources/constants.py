@@ -16,7 +16,6 @@ WSJ = "WSJ"
 # config 
 CONFIG_DIR = "config"
 
-
 # Link to DB Configuration
 DB_CONFIG_FILE = "db.yml"
 
@@ -26,10 +25,10 @@ CONFIG_DIR = "config"
 CONFIG_FNAME = "rss_feeds.yml"
 PARAM_CONFIG_FILE = "services.yml"
 APP_KEYS_FILE = "keys.yml"
+NLU_CONFIG = "nlu_config.yml"
 PAR_DIR = ".."
 
-
-# name of collections 
+# name of collections
 
 COLLECTION_ARTICLES = 'articles'
 COLLECTION_PODCASTS = 'podcasts'
@@ -40,7 +39,7 @@ SCHEDULER_NEWS_ARTICLES = "Scheduler-NewsArticles"
 SCHEDULER_PODCASTS = "Scheduler-Podcasts"
 SCHEDULER_VIDEOS = "Scheduler-Videos"
 
-SECONDS = 60 
+SECONDS = 60
 
 # Empty string 
 EMPTY_STR = ""
@@ -60,8 +59,7 @@ MEDIA_TYPE_ARTICLES = {ARTICLES: ARTICLE}
 MEDIA_TYPE_PODCASTS = {PODCASTS: PODCAST}
 MEDIA_TYPE_VIDEOS = {VIDEOS: VIDEO}
 
-
-# Scheduler 
+# Scheduler
 STOPPED = "stopped"
 RUNNING = "running"
 
@@ -76,11 +74,13 @@ FREEBASE_KEY = "freebase_key"
 YAHOO_KEY = "yahoo_key"
 ZEMANTA_KEY = "zemanta_key"
 
-
-# DB 
+# Connectors
 MONGODB = "mongodb"
 KAFKA = "kafka"
 
-
+# Host/Port
 HOST = "host"
 PORT = "port"
+
+# NLU Server
+NLU_SERVER = "http://localhost:5000"

@@ -14,7 +14,7 @@ class NewsQuester():
         :type db_connector: cursor
 
         :param db_config: mongodb configuration file
-        :type db_config: dict
+        :type db_config: :py:class:`dict`
 
         """
         self.db_config = db_config
@@ -25,13 +25,13 @@ class NewsQuester():
         get all content (articles, podcasts, videos)
 
         :param articles: True if we need to get articles
-        :type articles: Boolean
+        :type articles: boolean
 
         :param podcasts: True if we need to get podcasts
-        :type podcasts: Boolean
+        :type podcasts: boolean
 
         :param videos: True if we need to get videos
-        :type videos: Boolean
+        :type videos: boolean
 
         :return: json object {"status": "ok", "articles": <articles>, "podcasts": <podcasts>, "videos": <videos>})
         """
@@ -56,16 +56,16 @@ class NewsQuester():
         find content (articles, podcasts, videos) based on a keyword
 
         :param keyword: keyword to filter data
-        :type keyword: String
+        :type keyword: :py:class:`str`
 
         :param articles: True if we need to get articles
-        :type articles: Boolean
+        :type articles: boolean
 
         :param podcasts: True if we need to get podcasts
-        :type podcasts: Boolean
+        :type podcasts: boolean
 
         :param videos: True if we need to get videos
-        :type videos: Boolean
+        :type videos: boolean
 
         :return: json object {"status": "ok", "articles": <articles>, "podcasts": <podcasts>, "videos": <videos>})
         """
@@ -91,16 +91,16 @@ class NewsQuester():
         find content (articles, podcasts, videos) based on a keyword
 
         :param keyword: keyword to filter data
-        :type keyword: String
+        :type keyword: :py:class:`str`
 
         :param articles: True if we need to get articles
-        :type articles: Boolean
+        :type articles: boolean
 
         :param podcasts: True if we need to get podcasts
-        :type podcasts: Boolean
+        :type podcasts: boolean
 
         :param videos: True if we need to get videos
-        :type videos: Boolean
+        :type videos: boolean
 
         :return: json object {"status": "ok", "articles": <articles>, "podcasts": <podcasts>, "videos": <videos>})
         """
@@ -126,19 +126,19 @@ class NewsQuester():
         Filter tweets from datetime datefrom to dateto
 
         :param from_date: starting date
-        :type from_date: Str
+        :type from_date: :py:class:`str`
 
         :param to_date: end date
-        :type to_date: Str
+        :type to_date: :py:class:`str`
 
         :param articles: True if we need to get articles
-        :type articles: Boolean
+        :type articles: boolean
 
         :param podcasts: True if we need to get podcasts
-        :type podcasts: Boolean
+        :type podcasts: boolean
 
         :param videos: True if we need to get videos
-        :type videos: Boolean
+        :type videos: boolean
 
         :return: json object {"status": "ok", "articles": <articles>, "podcasts": <podcasts>, "videos": <videos>})
         """
@@ -167,16 +167,16 @@ class NewsQuester():
         find content (articles, podcasts, videos) based on a keyword
 
         :param keyword: keyword to filter data
-        :type keyword: String
+        :type keyword: :py:class:`str`
 
         :param articles: True if we need to get articles
-        :type articles: Boolean
+        :type articles: boolean
 
         :param podcasts: True if we need to get podcasts
-        :type podcasts: Boolean
+        :type podcasts: boolean
 
         :param videos: True if we need to get videos
-        :type videos: Boolean
+        :type videos: boolean
 
         :return: json object {"status": "ok", "articles": <articles>, "podcasts": <podcasts>, "videos": <videos>})
         """
@@ -202,16 +202,16 @@ class NewsQuester():
         find content (articles, podcasts, videos) based on a keyword
 
         :param keyword: keyword to filter data
-        :type keyword: String
+        :type keyword: :py:class:`str`
 
         :param articles: True if we need to get articles
-        :type articles: Boolean
+        :type articles: boolean
 
         :param podcasts: True if we need to get podcasts
-        :type podcasts: Boolean
+        :type podcasts: boolean
 
         :param videos: True if we need to get videos
-        :type videos: Boolean
+        :type videos: boolean
 
         :return: json object {"status": "ok", "articles": <articles>, "podcasts": <podcasts>, "videos": <videos>})
         """

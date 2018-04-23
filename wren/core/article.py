@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from resources.constants import EMPTY_STR, EMPTY_LIST, EMPTY_DICT
 import json
-
+from dateutil import parser
 
 class Article():
     """
@@ -77,11 +77,10 @@ class Article():
         self.category = kwargs.get("category", EMPTY_STR)
         self.language = kwargs.get("language", EMPTY_STR)
         self.concepts = {}
-        self.media_org = kwargs.get("media_org", EMPTY_STR)
-
+        self.media_org = kwargs.get('media_org', EMPTY_STR)
         self.popularity_summary = kwargs.get("popularity", EMPTY_STR)
         self.sentiment_score = kwargs.get("sentiment", EMPTY_STR)
-        self.text_entities = kwargs.get("entities", EMPTY_STR)
+        self.entities = kwargs.get("entities", EMPTY_STR)
 
     def __str__(self):
         return ("ARTICLE\n Headline: {}\n Publication Date: {}\n Link: {}\n ontent: {}\n Source: {}\n".format(
@@ -93,7 +92,7 @@ class Article():
     def json(self, dt_to_str=False):
         return {"article_headline": self.article_headline,
                 "article_url": self.article_url,
-                "pub_date": self.pub_date.strftime("%Y-%m-%d %H:%M:%S") if dt_to_str else self.pub_date,
+                "pub_date": parser.parse(self.pub_date) if dt_to_str else self.pub_date,
                 "summary": self.summary,
                 "article_content": self.article_content,
                 "article_html": self.article_html,
@@ -110,4 +109,4 @@ class Article():
                 "news_media_org": self.media_org,
                 "popularity": self.popularity_summary,
                 "sentiment": self.sentiment_score,
-                "entities": self.text_entities}
+                "entities": self.entities}

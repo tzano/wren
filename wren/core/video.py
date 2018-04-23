@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from resources.constants import EMPTY_STR, EMPTY_LIST, EMPTY_DICT
-
+from dateutil import parser
 
 class Video():
     """
@@ -85,7 +85,7 @@ class Video():
     def json(self):
         return {"title": self.title,
                 "video_url": self.video_url,
-                "pub_date": self.pub_date,
+                "pub_date": parser.parse(self.pub_date) if dt_to_str else self.pub_date,
                 "summary": self.summary,
                 "video_content": self.video_content,
                 "video_subtitle": self.video_subtitle,

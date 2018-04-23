@@ -25,7 +25,7 @@ class DataFetcher(Thread):
 
         """
         Thread.__init__(self)
-        self.kafka_consumer = KafkaConsumer(bootstrap_servers=[kafka_server], auto_offset_reset='earliest',
+        self.kafka_consumer = KafkaConsumer(bootstrap_servers=[kafka_server], #auto_offset_reset='earliest',
                                             value_deserializer=lambda x: binascii.unhexlify(x).decode('utf-8'))
         self.mongo_db_collection = mongo_db_collection
         self.kafka_topic = kafka_topic
