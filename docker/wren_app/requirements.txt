@@ -7,3 +7,5 @@ jinja2
 numpy
 pymongo
 python-dateutil
+smtplib
+tweepy

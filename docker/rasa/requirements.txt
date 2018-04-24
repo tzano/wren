@@ -4,8 +4,6 @@ klein
 sklearn_crfsuite
 sklearn
 Flask
-rasa-core
+rasa_core
 spacy
 scipy
-sklearn-crfsuite
-pyliblzma
