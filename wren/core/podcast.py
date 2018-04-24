@@ -80,7 +80,7 @@ class Podcast():
                                                                                              self.podcast_url,
                                                                                              self.media_org)
 
-    def json(self):
+    def json(self, dt_to_str=False):
         return {"title": self.title,
                 "podcast_url": self.podcast_url,
                 "pub_date": parser.parse(self.pub_date) if dt_to_str else self.pub_date,

@@ -11,7 +11,7 @@ class Scheduler(Thread):
     __metaclass__ = ABCMeta
 
     """
-    Scheduler Class 
+    Scheduler Abstract Class 
     """
 
     def __init__(self, name, kafka_server, kafka_topic, *args, **kwargs):

@@ -82,7 +82,7 @@ class Video():
                                                                                             self.video_url,
                                                                                             self.media_org))
 
-    def json(self):
+    def json(self, dt_to_str=False):
         return {"title": self.title,
                 "video_url": self.video_url,
                 "pub_date": parser.parse(self.pub_date) if dt_to_str else self.pub_date,

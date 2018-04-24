@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from models.article import Article
-from models.podcast import Podcast
-from models.video import Video
+from article import Article
+from podcast import Podcast
+from video import Video
 from abc import ABCMeta
 from os.path import join, dirname, abspath
 import yaml
@@ -115,7 +115,7 @@ class NewsMediaOrg():
         sentiment_score = sentistrength.score_sentiment(newsmedia_text)
         return sentiment_score
 
-    def extract_entities(self, newsmedia_text, use_calais= True, use_dbpedia=False):
+    def extract_entities(self, newsmedia_text, use_calais=True, use_dbpedia=False):
         """
         extract entities from the text
 
@@ -341,14 +341,14 @@ class NewsMediaOrg():
 
                 # popularity_summary = self.score_popularity(article_url)
                 # sentiment_score = self.score_sentiment(article_summary)
-                text_entities =  {"Calais": {}, "Dbpedia": {}} #self.extract_entities(article_summary)
+                text_entities = {"Calais": {}, "Dbpedia": {}}  # self.extract_entities(article_summary)
 
                 return Article(article_headline=article_headline, article_url=article_url,
                                pub_date=article_pub_dt, summary=article_summary, article_content=article_content,
                                article_html=article_html, article_metadata=article_metadata, authors=article_authors,
                                thumbnail=article_thumbnail, images=article_images, videos=article_videos,
-                               keywords=article_keywords, media_org= article_source, entities= text_entities,
-                               category=article_category, language=article_language )
+                               keywords=article_keywords, media_org=article_source, entities=text_entities,
+                               category=article_category, language=article_language)
 
             else:
                 logging.error("Cannot fetch the article\'s url!")
@@ -357,7 +357,6 @@ class NewsMediaOrg():
         except Exception as e:
             logging.error("Cannot parse article. Download operation may have failed!")
             return None
-
 
     def parse_articles(self, category="All"):
         """
