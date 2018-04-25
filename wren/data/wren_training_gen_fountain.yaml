@@ -1,0 +1,3025 @@
+findNewsContent:
+  - utterance: (please find|find out|Help me search|I'd like to find|I'd like to find out|I'd like to know|I would like to know|Show me|Please show me|I'd like to see|I would like to see) what's in the news on {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+        - U.S. News & World Report
+        - TRT
+        - TV Today Network
+        - CBC
+        - DW-TV
+        - Euronews
+        - NPO
+        - TF1
+        - beIN Sports
+        - ESPNews
+        - Sky Sport 24
+        - Sky Meteo24
+
+  - utterance: (what is in|what's in|Please pull up the|Wish to hear|Look up|I'd like to find|Would like to find the|Can I get the|Give me|I'm wondering what are|I am wondering what are the latest news) the news (on|from) {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - The Wall Street Journal
+        - The New York Times
+        - USA Today
+        - Los Angeles Times
+        - The Mercury News
+        - New York Daily News
+        - New York Post
+        - The Washington Post
+        - Chicago Sun-Times
+        - The Denver Post
+        - Chicago Tribune
+        - The Dallas Morning News
+        - Newsday   Long Island
+        - Houston Chronicle
+        - Orange County Register
+        - The Star-Ledger   Newark
+        - Tampa Bay Times   Tampa
+        - The Plain Dealer
+        - The Philadelphia Inquirer
+        - Star Tribune
+        - The Arizona Republic
+        - Honolulu Star-Advertiser
+        - Las Vegas Review-Journal
+        - The San Diego Union-Tribune
+        - The Boston Globe
+        - Daily Mail
+        - The Mail on Sunday
+        - Daily Express
+        - Sunday Express
+        - The Sun on Sunday
+        - Daily Mirror
+        - Sunday Mirror
+        - Sunday People
+        - Daily Star
+        - Daily Star Sunday
+        - Morning Star
+        - The Yomiuri Shimbun
+        - The Asahi Shimbun
+        - USA Today
+        - Dainik Bhaskar
+        - Dainik Jagran
+        - The Mainichi Newspapers
+        - Cankao Xiaoxi
+        - Amar Ujala
+        - The Times of India
+        - The Nikkei
+        - People's Daily
+        - Chunichi Shimbun
+        - Hindustan Dainik
+        - Malayala Manorama
+        - The Wall Street Journal
+        - Bild
+        - The New York Times
+        - Guangzhou Daily
+
+  - utterance: (what is|what's) {findNewsContent_orgName:findNewsContent_orgName} saying happened {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+        - U.S. News & World Report
+        - TRT
+        - TV Today Network
+        - CBC
+        - DW-TV
+        - Euronews
+        - NPO
+        - TF1
+        - beIN Sports
+        - ESPNews
+        - Sky Sport 24
+        - Sky Meteo24
+
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - coming day
+        - upcoming day
+        - this day
+        - last day
+        - past week
+        - previous month
+        - current week
+        - this morning
+        - this afternoon
+        - tonight
+        - this evening
+
+  - utterance: (what is|what's) {findNewsContent_orgName:findNewsContent_orgName} saying about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - The Wall Street Journal
+        - The New York Times
+        - USA Today
+        - Los Angeles Times
+        - The Mercury News
+        - New York Daily News
+        - New York Post
+        - The Washington Post
+        - Chicago Sun-Times
+        - The Denver Post
+        - Chicago Tribune
+        - The Dallas Morning News
+        - Newsday   Long Island
+        - Houston Chronicle
+        - Orange County Register
+        - The Star-Ledger   Newark
+        - Tampa Bay Times   Tampa
+        - The Plain Dealer
+        - The Philadelphia Inquirer
+        - Star Tribune
+        - The Arizona Republic
+        - Honolulu Star-Advertiser
+        - Las Vegas Review-Journal
+        - The San Diego Union-Tribune
+        - The Boston Globe
+        - Daily Mail
+        - The Mail on Sunday
+        - Daily Express
+        - Sunday Express
+        - The Sun on Sunday
+        - Daily Mirror
+        - Sunday Mirror
+        - Sunday People
+        - Daily Star
+        - Daily Star Sunday
+        - Morning Star
+        - The Yomiuri Shimbun
+        - The Asahi Shimbun
+        - USA Today
+        - Dainik Bhaskar
+        - Dainik Jagran
+        - The Mainichi Newspapers
+        - Cankao Xiaoxi
+        - Amar Ujala
+        - The Times of India
+        - The Nikkei
+        - People's Daily
+        - Chunichi Shimbun
+        - Hindustan Dainik
+        - Malayala Manorama
+        - The Wall Street Journal
+        - Bild
+        - The New York Times
+        - Guangzhou Daily
+
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Presidential elections
+        - Winter Olympic Games
+        - PyeongChang 2018 Olympics
+        - 2014 Winter Olympics
+        - Rome Film Festival
+        - The Oscars
+        - Tomorrowland
+        - Ultra Europe
+        - Big Day Out
+        - FIFA World Cup
+        - Copa America
+        - UEFA Champions League
+
+  - utterance: Has {findNewsContent_orgName:findNewsContent_orgName} been saying anything about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+        - U.S. News & World Report
+        - TRT
+        - TV Today Network
+        - CBC
+        - DW-TV
+        - Euronews
+        - NPO
+        - TF1
+        - beIN Sports
+        - ESPNews
+        - Sky Sport 24
+        - Sky Meteo24
+
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Presidential elections
+        - Winter Olympic Games
+        - PyeongChang 2018 Olympics
+        - 2014 Winter Olympics
+        - Rome Film Festival
+        - The Oscars
+        - Tomorrowland
+        - Ultra Europe
+        - Big Day Out
+        - FIFA World Cup
+        - Copa America
+        - UEFA Champions League
+
+  - utterance: "{findNewsContent_eventName:findNewsContent_eventName} is happening, (what is|what's) {findNewsContent_orgName:findNewsContent_orgName} saying"
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - The Wall Street Journal
+        - The New York Times
+        - USA Today
+        - Los Angeles Times
+        - The Mercury News
+        - New York Daily News
+        - New York Post
+        - The Washington Post
+        - Chicago Sun-Times
+        - The Denver Post
+        - Chicago Tribune
+        - The Dallas Morning News
+        - Newsday   Long Island
+        - Houston Chronicle
+        - Orange County Register
+        - The Star-Ledger Newark
+        - Tampa Bay Times Tampa
+        - The Plain Dealer
+        - The Philadelphia Inquirer
+        - Star Tribune
+        - The Arizona Republic
+        - Honolulu Star-Advertiser
+        - Las Vegas Review-Journal
+        - The San Diego Union-Tribune
+        - The Boston Globe
+        - Daily Mail
+        - The Mail on Sunday
+        - Daily Express
+        - Sunday Express
+        - The Sun on Sunday
+        - Daily Mirror
+        - Sunday Mirror
+        - Sunday People
+        - Daily Star
+        - Daily Star Sunday
+        - Morning Star
+        - The Yomiuri Shimbun
+        - The Asahi Shimbun
+        - USA Today
+        - Dainik Bhaskar
+        - Dainik Jagran
+        - The Mainichi Newspapers
+        - Cankao Xiaoxi
+        - Amar Ujala
+        - The Times of India
+        - The Nikkei
+        - People's Daily
+        - Chunichi Shimbun
+        - Hindustan Dainik
+        - Malayala Manorama
+        - The Wall Street Journal
+        - Bild
+        - The New York Times
+        - Guangzhou Daily
+
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Presidential elections
+        - Winter Olympic Games
+        - PyeongChang 2018 Olympics
+        - 2014 Winter Olympics
+        - Rome Film Festival
+        - The Oscars
+        - Tomorrowland
+        - Ultra Europe
+        - Big Day Out
+        - FIFA World Cup
+        - Copa America
+        - UEFA Champions League
+
+  - utterance: (Search for|Find|Look up|Pull up) {findNewsContent_contentType:findNewsContent_contentType} written by {findNewsContent_authorName:findNewsContent_authorName}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - Article
+        - Articles
+
+      findNewsContent_authorName:findNewsContent_authorName:
+        - Thomas Friedman
+        - Shereen Bhan
+        - Paul Krugman
+        - Frank Bruni
+        - Anna Quindlen
+        - Ben Jacobs
+        - Katharine Viner
+        - Dean Baquet
+        - Jill Abramson
+
+  - utterance: (Search for|Find|Look up|Pull up) {findNewsContent_contentType:findNewsContent_contentType} presented by {findNewsContent_authorName:findNewsContent_authorName}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - TV program
+        - television program
+        - talk show
+
+      findNewsContent_authorName:findNewsContent_authorName:
+        - John Oliver
+        - Jill Abramson
+        - Steph McGovern
+        - Jeremy Clarkson
+        - Chris Evans
+        - Susanna Reid
+        - Page semi-protected
+        - Ellen DeGeneres
+        - Cat Deeley
+        - Tess Daly
+  - utterance: (Search for|Find|Look up|Pull up) {findNewsContent_contentType:findNewsContent_contentType} news using {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+      findNewsContent_orgName:findNewsContent_orgName:
+        - The Wall Street Journal
+        - The New York Times
+        - USA Today
+        - Los Angeles Times
+        - The Mercury News
+        - New York Daily News
+        - New York Post
+        - The Washington Post
+        - Chicago Sun-Times
+        - The Denver Post
+        - Chicago Tribune
+        - The Dallas Morning News
+        - Newsday   Long Island
+        - Houston Chronicle
+        - Orange County Register
+        - The Star-Ledger   Newark
+        - Tampa Bay Times   Tampa
+        - The Plain Dealer
+        - The Philadelphia Inquirer
+        - Star Tribune
+        - The Arizona Republic
+        - Honolulu Star-Advertiser
+        - Las Vegas Review-Journal
+        - The San Diego Union-Tribune
+        - The Boston Globe
+        - Daily Mail
+        - The Mail on Sunday
+        - Daily Express
+        - Sunday Express
+        - The Sun on Sunday
+        - Daily Mirror
+        - Sunday Mirror
+        - Sunday People
+        - Daily Star
+        - Daily Star Sunday
+        - Morning Star
+        - The Yomiuri Shimbun
+        - The Asahi Shimbun
+        - USA Today
+        - Dainik Bhaskar
+        - Dainik Jagran
+        - The Mainichi Newspapers
+        - Cankao Xiaoxi
+        - Amar Ujala
+        - The Times of India
+        - The Nikkei
+        - People's Daily
+        - Chunichi Shimbun
+        - Hindustan Dainik
+        - Malayala Manorama
+        - The Wall Street Journal
+        - Bild
+        - The New York Times
+        - Guangzhou Daily
+  - utterance: What new {findNewsContent_contentType:findNewsContent_contentType} is coming out this {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - hour
+        - day
+        - week
+
+  - utterance: (What's|what is) the news saying about {findNewsContent_contentType:findNewsContent_contentType} {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - today
+        - this morning
+        - this afternoon
+
+  - utterance: (Has|Have) {findNewsContent_contentType:findNewsContent_contentType} been featured in the news {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - recently
+        - today 
+        - this morning
+        - this afternoon
+
+  - utterance: Show me the news for {findNewsContent_contentType:findNewsContent_contentType}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+  - utterance: What's {findNewsContent_orgName:findNewsContent_orgName} saying about {findNewsContent_contentType:findNewsContent_contentType}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+      findNewsContent_orgName:findNewsContent_orgName:
+        - American Public Media
+        - All Things Comedy
+        - At Will Radio
+        - Pendant Productions
+        - Polaris Network
+        - Pendant Productions
+        - Rooster Teeth Podcast
+        - Tom Kent Radio Network
+        - NPR
+        - Gimlet Media
+        - Jupiter Broadcasting
+        - Feral Audio
+        - Carolla Digital
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+        - U.S. News & World Report
+        - TRT
+        - TV Today Network
+        - CBC
+        - DW-TV
+        - Euronews
+        - NPO
+        - TF1
+        - beIN Sports
+        - ESPNews
+        - Sky Sport 24
+        - Sky Meteo24
+
+  - utterance: Which {findNewsContent_contentType:findNewsContent_contentType} is worth listening to
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - podcasts
+        - shows
+
+  - utterance: What good {findNewsContent_contentType:findNewsContent_contentType} about this {findNewsContent_spatialRelation:findNewsContent_spatialRelation}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+      findNewsContent_spatialRelation:findNewsContent_spatialRelation:
+        - area
+        - city 
+        - country
+
+  - utterance: Best {findNewsContent_contentType:findNewsContent_contentType} according to {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+      findNewsContent_orgName:findNewsContent_orgName:
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+
+  - utterance: Is there anything new for {findNewsContent_contentItemName:findNewsContent_contentItemName}
+    slots:
+      findNewsContent_contentItemName:findNewsContent_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+
+  - utterance: Look up {findNewsContent_topicName:findNewsContent_topicName} and tell me if there's anything from the (past|last) {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - one day 
+        - two days 
+        - three days
+        - four days
+        - week 
+        - month 
+
+  - utterance: What is the news saying about {findNewsContent_topicName:findNewsContent_topicName}
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: Tell me what {findNewsContent_orgName:findNewsContent_orgName} has been saying about {findNewsContent_contentItemName:findNewsContent_contentItemName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - Daily Express
+        - Sunday Express
+        - The Sun on Sunday
+        - Daily Mirror
+        - Sunday Mirror
+        - Sunday People
+        - Daily Star
+        - Daily Star Sunday
+        - Morning Star
+        - The Yomiuri Shimbun
+        - The Asahi Shimbun
+        - USA Today
+        - Dainik Bhaskar
+        - Dainik Jagran
+        - The Mainichi Newspapers
+        - Cankao Xiaoxi
+        - Amar Ujala
+        - The Times of India
+        - The Nikkei
+        - People's Daily
+        - Chunichi Shimbun
+        - Hindustan Dainik
+
+      findNewsContent_contentItemName:findNewsContent_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+
+  - utterance: Find news about {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - The Wall Street Journal
+        - The New York Times
+        - USA Today
+        - Los Angeles Times
+        - The Mercury News
+        - New York Daily News
+        - New York Post
+        - The Washington Post
+        - Chicago Sun-Times
+        - The Denver Post
+        - Chicago Tribune
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al-Jazeera
+
+  - utterance: I am looking for an {findNewsContent_contentType:findNewsContent_contentType} entitled {findNewsContent_contentItemName:findNewsContent_contentItemName}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+      findNewsContent_contentItemName:findNewsContent_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+
+  - utterance: What are the latest news at {findNewsContent_locationName:findNewsContent_locationName}
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - South Africa
+        - Zambia
+        - Zimbabwe
+        - Serbia and Montenegro
+        - Netherlands
+        - Norway
+        - Nepal
+        - New Zealand
+        - Oman
+        - Panama
+        - Peru
+        - Philippines
+        - Pakistan
+        - Poland
+        - Palestin
+        - Portugal
+        - Paraguay
+        - Qatar
+        - Romania
+        - Serbia
+        - Russia
+        - Rwanda
+  - utterance: What happened in {findNewsContent_locationName:findNewsContent_locationName}, {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - Turkey
+        - Taiwan
+        - Tanzania
+        - Ukraine
+        - Uganda
+        - United States
+        - Uruguay
+        - Uzbekistan
+        - Vatican
+        - Venezuela
+        - Vietnam
+        - Vanuatu
+        - Yemen
+        - South Africa
+        - Zambia
+        - Zimbabwe
+        - Serbia and Montenegro
+        - Netherlands
+        - Norway
+        - Nepal
+        - New Zealand
+        - Oman
+        - Panama
+        - Peru
+        - Philippines
+        - Pakistan
+        - Poland
+        - Palestin
+        - Portugal
+        - Paraguay
+        - Qatar
+        - Romania
+        - Serbia
+        - Russia
+        - Rwanda
+
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - yesterday day 
+        - two days ago 
+        - three days ago
+        - four days
+        - last week 
+        - last month 
+  - utterance: "{findNewsContent_locationName:findNewsContent_locationName} news"
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - Qatar
+        - Reunion
+        - Romania
+        - Serbia
+        - Russia
+        - Rwanda
+        - Saudi Arabia
+        - Seychelles
+        - Sudan
+        - South Sudan
+        - Sweden
+        - Singapore
+        - Saint Helena
+        - Slovenia
+        - Slovakia
+        - Somalia
+        - El Salvador
+        - Syria
+        - Swaziland
+        - United States
+        - Uruguay
+        - Uzbekistan
+        - Vatican
+        - Venezuela
+        - Vietnam
+
+  - utterance: "{findNewsContent_locationName:findNewsContent_locationName} news from {findNewsContent_orgName:findNewsContent_orgName}"
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - South Korea
+        - Kosovo
+        - Slovakia
+        - Somalia
+        - El Salvador
+        - Kuwait
+        - Cayman Islands
+        - Kazakhstan
+        - Laos
+        - Lebanon
+        - Saint Lucia
+        - Liechtenstein
+        - Sri Lanka
+        - Liberia
+        - Lesotho
+        - Lithuania
+        - Luxembourg
+        - Latvia
+        - Libya
+        - Morocco
+        - Monaco
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+
+  - utterance: (News|latest) for {findNewsContent_locationName:findNewsContent_locationName} on {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - Jordan
+        - Japan
+        - Kenya
+        - Kyrgyzstan
+        - Cambodia
+        - Kiribati
+        - Algeria 
+        - Algiers
+        - Argentina   
+        - Buenos Aires
+        - Armenia 
+        - Yerevan
+        - Australia   
+        - Canberra
+        - Austria 
+        - Vienna
+        - Azerbaijan  
+        - Baku
+        - Pakistan 
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+  - utterance: What's going on in {findNewsContent_locationName:findNewsContent_locationName}
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - Afghanistan 
+        - Kabul
+        - Albania 
+        - Tirana
+        - Algeria 
+        - Algiers
+        - Argentina   
+        - Buenos Aires
+        - Armenia 
+        - Yerevan
+        - Australia   
+        - Canberra
+        - Austria 
+        - Vienna
+        - Azerbaijan  
+        - Baku
+        - Pakistan    
+        - Islamabad
+        - Palau   
+        - Ngerulmud
+        - Palestine
+        - Panama
+        - Peru    
+        - Lima
+        - Poland  
+        - Warsaw
+        - Portugal    
+        - Lisbon
+  - utterance: Find out what happened in {findNewsContent_locationName:findNewsContent_locationName}
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - Iraq
+        - Iran
+        - Iceland
+        - Italy
+        - Jersey
+        - Jamaica
+        - Jordan
+        - Japan
+        - Kenya
+        - Kyrgyzstan
+        - Cambodia
+        - Kiribati
+        - Comoros
+        - North Korea
+        - South Korea
+        - Kosovo
+        - Kuwait
+        - Cayman Islands
+        - Kazakhstan
+        - Laos
+        - Lebanon
+        - Saint Lucia
+        - Liechtenstein
+        - Sri Lanka
+        - Liberia
+        - Lesotho
+        - Lithuania
+        - Luxembourg
+        - Latvia
+        - Libya
+        - Morocco
+        - Monaco
+        - Moldova
+        - Nigeria
+        - Nicaragua
+        - Netherlands
+        - Norway
+        - Nepal
+        - New Zealand
+
+  - utterance: Is {findNewsContent_locationName:findNewsContent_locationName} in the news
+    slots:
+      findNewsContent_locationName:findNewsContent_locationName:
+        - Saudi Arabia 
+        - Riyadh
+        - Senegal 
+        - Dakar
+        - Serbia  
+        - Belgrade
+        - Seychelles  
+        - Victoria
+        - Sierra Leone    
+        - Freetown
+        - Singapore   
+        - Singapore
+        - Slovakia    
+        - Bratislava
+        - Slovenia    
+        - Ljubljana
+        - South Korea 
+        - Seoul
+        - South Sudan 
+        - Juba
+        - Spain   
+        - Madrid
+        - Sudan   
+        - Khartoum
+        - Suriname    
+        - Paramaribo
+        - Sweden  
+        - Stockholm
+        - Switzerland
+        - Bern
+        - Syria   
+        - Damascus
+        - Georgia 
+        - Tbilisi
+        - Germany 
+        - Berlin
+        - Ghana   
+        - Accra
+        - Greece 
+        - Athens
+  - utterance: What's in the news from {findNewsContent_timeFrame:findNewsContent_timeFrame} to {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - yesterday
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - today
+  - utterance: Show me the news from {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - today
+        - yesterday
+        - this morning
+        - this evening 
+
+  - utterance: News from {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - today
+        - yesterday
+        - this morning
+        - this evening 
+        
+  - utterance: "{findNewsContent_timeFrame:findNewsContent_timeFrame} news"
+    slots:
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - today
+        - yesterday
+        - this morning
+        - this evening 
+        
+  - utterance: What happened in the news {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - today
+        - yesterday
+        - this morning
+        - this evening 
+        
+  - utterance: "{findNewsContent_topicName:findNewsContent_topicName} news"
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: News about {findNewsContent_topicName:findNewsContent_topicName}
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: Show me {findNewsContent_topicName:findNewsContent_topicName} news
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: What's the news saying about {findNewsContent_topicName:findNewsContent_topicName}
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: When was the last time {findNewsContent_topicName:findNewsContent_topicName} was in the news
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+  - utterance: Has {findNewsContent_orgName:findNewsContent_orgName} featured anything about {findNewsContent_topicName:findNewsContent_topicName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+  - utterance: Has {findNewsContent_topicName:findNewsContent_topicName} been in the news recently
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: What's happening with {findNewsContent_topicName:findNewsContent_topicName}
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: Is the news saying anything about {findNewsContent_topicName:findNewsContent_topicName}
+    slots:
+      findNewsContent_topicName:findNewsContent_topicName:
+        - business
+        - Sports
+        - entertainment
+        - Style
+        - fashion
+        - Technology
+        - Finance
+        - Energy
+        - Environment
+        - World
+        - law
+        - politics
+        - education
+        - the impact of war
+        - investigations    
+        - national security
+
+  - utterance: News about {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - George Washington
+        - John Adams
+        - Thomas Jefferson
+        - James Madison
+        - James Monroe
+        - John Quincy Adams
+        - Andrew Jackson
+        - Martin Van Buren
+        - William Henry Harrison
+        - John Tyler
+        - James K. Polk
+        - Zachary Taylor
+        - Millard Fillmore
+        - Franklin Pierce
+        - James Buchanan
+        - Abraham Lincoln
+        - Andrew Johnson
+        - Ulysses S. Grant
+        - Rutherford B. Hayes
+        - James A. Garfield
+        - Chester A. Arthur
+        - Grover Cleveland
+        - Benjamin Harrison
+        - Grover Cleveland (2nd term)
+        - William McKinley
+        - Theodore Roosevelt
+        - William Howard Taft
+        - Woodrow Wilson
+        - Warren G. Harding
+        - Calvin Coolidge
+        - Herbert Hoover
+        - Franklin D. Roosevelt
+        - Harry S. Truman
+        - Dwight D. Eisenhower
+        - John F. Kennedy
+        - Lyndon B. Johnson
+        - Richard Nixon
+        - Gerald Ford
+        - Jimmy Carter
+        - Ronald Reagan
+        - George H. W. Bush
+        - Bill Clinton
+        - George W. Bush
+        - Barack Obama
+
+  - utterance: "{findNewsContent_personName:findNewsContent_personName} news"
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - Alexander Selkirk
+        - Arnold Schwarzenegger
+        - Adam Smith
+        - Antoine Lavoisier
+        - Amitabh Bachchan
+        - Agathocles of Syracuse
+        - Augustin-Louis Cauchy
+        - Archimedes
+        - Alfred Jarry
+        - Anthemius of Tralles
+        - Alessandro Volta
+        - Alexander Fleming
+        - Andrew Carnegie
+        - Abel Tasman
+        - Alvar Aalto
+        - Andrew Wiles
+        - Aristide Maillol
+        - Antonio Canova
+        - Auguste Rodin
+        - Adam Weishaupt
+        - Adalbert of Prague
+        - Arthur Eddington
+        - Arthur Miller
+        - Alessandro Scarlatti
+        - Alois Alzheimer
+        - Akio Morita
+        - Anthony Hopkins
+        - Albrecht Dürer
+        - Alban Berg
+        - Blaise Pascal
+        - Bertrand Russell
+        - Babe Ruth
+        - Brian De Palma
+        - Bobby Charlton
+        - Berthe Morisot
+        - Douglas Adams
+        - Donald Knuth
+        - Dave Grohl
+        - Dino Zoff
+        - Dante Alighieri
+        - Dave Brubeck
+        - Dwight D. Eisenhower
+        - Daniel Defoe
+        - Denis Diderot
+        - Deng Xiaoping
+        - Dennis Ritchie
+        - Doris Day
+        - David Hilbert
+        - David Letterman
+        - Diego de Almagro
+        - Danny Elfman
+
+  - utterance: Show me what's in the news about {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+       - George H. W. Bush
+       - George Berkeley
+       - G. E. Moore
+       - George Washington
+       - Johann Gottlieb Fichte
+       - Guglielmo Marconi
+       - Gene Kelly
+       - Georg Cantor
+       - Gary Coleman
+       - Gustave Eiffel
+       - George Whipple
+       - Guy de Maupassant
+       - Gheorghe Hagi
+       - Gordon Banks
+       - Gottfried Wilhelm Leibniz
+       - Edward Lear
+       - Emperor Suizei
+       - Emperor Annei
+       - Emil Theodor Kocher
+       - Eli Wallach
+       - Edwin Hubble
+       - Elvis Costello
+       - Elie Wiesel
+       - Ed Wood
+       - Francis Ford Coppola
+       - Friedrich Nietzsche
+       - Frank Zappa
+       - Frank Lloyd Wright
+       - Friedrich Wöhler
+       - Frank Herbert
+       - Franco Baresi
+       - Franz Kafka
+       - Francisco Goya
+       - Felix Bloch
+       - Francis Xavier
+       - Franklin D. Roosevel
+       - Joseph Campbell
+       - John Dowland
+       - John James Audubon
+       - Joseph McCarthy
+       - John Hancock
+       - John Chrysostom
+       - James Heckman
+       - Johannes Brahms
+       - Jean-Paul Sartre
+       - James Tobin
+       - John Belushi
+       - Joseph Greenberg
+       - Justin Martyr
+
+  - utterance: What's {findNewsContent_orgName:findNewsContent_orgName} saying about {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+      findNewsContent_personName:findNewsContent_personName:
+        - Edward Lear
+        - Emperor Suizei
+        - Emperor Annei
+        - Emil Theodor Kocher
+        - Eli Wallach
+        - Edwin Hubble
+        - Elvis Costello
+        - Elie Wiesel
+        - Ed Wood
+        - Francis Ford Coppola
+        - Friedrich Nietzsche
+        - Frank Zappa
+        - Frank Lloyd Wright
+        - Friedrich Wöhler
+        - Frank Herbert
+        - Franco Baresi
+        - Franz Kafka
+        - Francisco Goya
+        - Felix Bloch
+        - Francis Xavier
+        - Franklin D. Roosevel
+        - Joseph Campbell
+        - John Dowland
+        - John James Audubon
+        - Joseph McCarthy
+        - John Hancock
+        - John Chrysostomv
+
+  - utterance: Has {findNewsContent_personName:findNewsContent_personName} been in the news
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - Friedrich Baltrusch
+        - Marie Baum
+        - Gertrud Bäumer
+        - Adolf Bauser
+        - Ludwig Bergsträsser
+        - Andreas Blunck
+        - Friedrich Burmeister
+        - Willy Hellpach
+        - Theodor Heuss
+        - Elly Heuss-Knapp
+        - Karl Hoffmann
+        - Hermann Höpker-Aschoff
+        - Erhard Hübener
+        - Hermann Hummel
+        - Nellie Ross
+        - Anton Becker
+        - Johannes Bell
+        - Theodor Bergmann
+        - Konrad Beyerle
+        - Lorenz Bock
+        - Eugen Bolz
+        - Franz Bracht
+        - Josef Braun
+        - Heinrich Brauns
+        - Heinrich Brüning
+        - Wilhelm Busch
+        - Ernst Ludwig von Gerlach
+        - Hans Globke
+        - Johann Baptist Gradl
+        - Margarete Gröwel
+        - Theodor von Guérard
+
+  - utterance: What's the latest news about {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - Mary Magdalene
+        - Malcolm
+        - Margaret Mitchell
+        - Mohammed Zahir Shah
+        - Mathias Rust
+        - Mikhail Gorbachev
+        - Marcel Proust
+        - Michelangelo
+        - Meat Loaf
+        - Nicolas Cage
+        - Nancy Reagan
+        - Niels Bohr
+        - Neil Armstrong
+        - Nasreddin
+        - Neville Chamberlain
+        - Niklas Luhmann
+        - Nikola Tesla
+        - Noam Chomsky
+        - Niels Henrik Abel
+  - utterance: Latest about {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - Werner Heisenberg
+        - Sandra Bullock
+        - Saddam Hussein
+        - Sonja Henie
+        - Shmuel Yosef Agnon
+        - Menachem Begin
+        - Mary Magdalene
+        - Malcolm
+        - Margaret Mitchell
+        - Mohammed Zahir Shah
+        - Mathias Rust
+        - Mikhail Gorbachev
+        - Marcel Proust
+        - Michelangelo
+        - Meat Loaf
+        - Nicolas Cage
+        - Nancy Reagan
+        - Niels Bohr
+        - Neil Armstrong
+        - Nasreddin
+  - utterance: Has {findNewsContent_orgName:findNewsContent_orgName} said anything about {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+      findNewsContent_personName:findNewsContent_personName:
+        - John Keats
+        - John Wycliffe
+        - Julia Kristeva
+        - John Pople
+        - Jay Leno
+        - Joan of Arc
+        - Jacob Grimm
+        - Jon Voight
+        - Joseph Lister, 1st Baron Lister
+        - James Lovelock
+        - Joachim von Ribbentrop
+        - John, King of England
+        - Julia Roberts
+        - John the Evangelist
+        - Jack Kirby
+        - Johnny Weissmuller
+        - Jack Brabham
+        - Josip Broz Tito
+        - Javier Saviola
+        - Keanu Reeves
+        - Karl Popper
+        - Konrad Adenauer
+        - Kurt Cobain
+        - Kary Mullis
+        - Kurt Waldheim
+        - Kurt Schwitters
+        - Kelsey Grammer
+        - Kingsley Amis
+        - Ken Kesey
+        - Karlheinz Stockhausen
+        - Konstantin Chernenko
+        - Kliment Voroshilov
+        - Krzysztof Penderecki
+        - Karl Ferdinand Braun
+        - Kazimir Malevich
+        - Konrad Emil Bloch
+        - Klement Gottwald
+        - Kate Bush
+        - Kirsten Dunst
+
+
+  - utterance: What's going on with {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - Kenneth Kaunda
+        - Konrad Emil Bloch
+        - Klement Gottwald
+        - Kate Bush
+        - Kirsten Dunst
+        - Knut Hamsun
+        - Kurt Georg Kiesinger
+        - Larry Wall
+        - Laura Bush
+        - Leni Riefenstahl
+        - Linus Torvalds
+        - Lee Harvey Oswald
+        - Louis Pasteur
+        - Ludwig Wittgenstein
+        - L. Ron Hubbard
+        - Leon Trotsky
+        - Ludwig Mies van der Rohe
+        - Le Corbusier
+        - Ludovico Ariosto
+        - Leonhard Euler
+        - Ludwig van Beethoven
+        - Lleyton Hewitt
+        - Lars von Trier
+        - Leucippus
+        - Fibonacci
+        - Louis Leakey
+        - Leon M. Lederman
+        - Louis the Pious
+        - Laurence Sterne
+        - Louisa May Alcott
+        - Muhammad ibn Abd al-Wahhab
+        - Mohammad Najibullah
+        - Mary Cassatt
+        - Hayao Miyazaki
+        - Martin of Tours
+        - Michael Schumacher
+        - Miles Davis
+        - Marie Curie
+        - Marcello Malpighi
+        - Martin Gardner
+        - Michael Jordan
+        - Murray Gell-Mann
+        - Mohamed Atta
+        - Mohammad Najibullah
+        - Mary Cassatt
+        - Hayao Miyazaki
+        - Martin of Tours
+        - Michael Schumacher
+        - Miles Davis
+        - Marie Curie
+        - Marcello Malpighi
+        - Martin Gardner
+        - Michael Jordan
+        - Murray Gell-Mann
+        - Mohamed Atta
+
+  - utterance: Did anything happen with {findNewsContent_personName:findNewsContent_personName}
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - Warren G. Harding
+        - Wilhelm von Humboldt
+        - Werner Heisenberg
+        - Sandra Bullock
+        - Saddam Hussein
+        - Sonja Henie
+        - Shmuel Yosef Agnon
+        - Menachem Begin
+        - Mary Magdalene
+        - Malcolm
+        - Margaret Mitchell
+        - Mohammed Zahir Shah
+        - Mathias Rust
+        - Mikhail Gorbachev
+        - Marcel Proust
+        - Michelangelo
+        - Meat Loaf
+        - Nicolas Cage
+        - Nancy Reagan
+        - Niels Bohr
+        - Neil Armstrong
+        - Nasreddin
+        - Neville Chamberlain
+        - Niklas Luhmann
+        - Nikola Tesla
+        - Noam Chomsky
+        - Niels Henrik Abel
+        - Nostradamus
+        - Noah Webster
+        - Nicolas Louis de Lacaille
+        - Nero
+        - Naguib Mahfouz
+        - Neil Gaiman
+        - Naomi Klein
+
+  - utterance: Has {findNewsContent_personName:findNewsContent_personName} been in the news recently
+    slots:
+      findNewsContent_personName:findNewsContent_personName:
+        - Theresa May
+        - David Cameron
+        - Gordon Brown
+        - Tony Blair
+        - John Major
+        - Baroness Margaret Thatcher
+        - James Callaghan
+        - Harold Wilson
+        - Clement Attlee
+        - Anthony Eden
+        - Stanley Baldwin
+        - Herbert Asquith
+        - Benjamin Disraeli
+        - Hayao Miyazaki
+        - Martin of Tours
+        - Michael Schumacher
+        - Miles Davis
+        - Marie Curie
+        - Marcello Malpighi
+        - Martin Gardner
+        - Michael Jordan
+        - Murray Gell-Mann
+
+  - utterance: What's new about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Women's March 
+        - chemical weapons attack
+        - 2017 World Expo 
+        - Solar eclipse
+        - Inauguration of Donald Trump‎
+        - Barack Obama's farewell address
+        - First 100 days of Donald Trump's presidency
+        - Brooklyn train crash
+        - 74th Golden Globe Awards
+        - 23rd Screen Actors Guild Awards
+        - Early January 2017 North American winter storm
+        - Executive Order 13769
+        - 2017 Sundance Film Festival
+        - Rolling Oaks Mall shooting
+        - Battle of al-Bab
+        - 22nd National Television Awards
+
+  - utterance: Search the news for {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - 2017 Sundance Film Festival
+        - Rolling Oaks Mall shooting
+        - Battle of al-Bab
+        - 22nd National Television Awards
+        - Wales Act 2017
+        - WWE United Kingdom Championship Tournament
+        - SAFF Women's Championship‎
+        - Africa Cup of Nations‎ 
+        - Brisbane International‎
+        - Hobart International
+        - Bronx apartment fire
+        - A Christmas Story Live!
+        - Clash of Champions (2017)
+        - Creek Fire
+        - Southern California wildfires
+        - Rye Fire
+        - Lilac Fire
+        - Skirball Fire
+        - Thomas Fire
+        - Washington train derailment
+        - Music City Bowl
+        - Liberty Bowl
+        - Independence Bowl
+        - Heart of Dallas Bowl
+  - utterance: Has the news said anything about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Lilac Fire
+        - Skirball Fire
+        - Thomas Fire
+        - Washington train derailment
+        - Music City Bowl
+        - Liberty Bowl
+        - Independence Bowl
+        - Heart of Dallas Bowl
+        - Hawaii Bowl
+        - NCAA Division I Men's Soccer Championship Game
+        - NCAA Division I Women's Volleyball Tournament
+        - U.S. Figure Skating Championships
+        - Storm Dylan
+        - Storm Caroline
+        - 2017 BBC Sports Personality of the Year Award
+        - Deloitte Tankard
+        - British Columbia Scotties Tournament of Hearts
+        - Canadian Junior Curling Championships
+        - 22nd Lumières Awards
+        - French Socialist Party presidential primary, 2017
+        - Executive Order 13769
+        - Muslim ban
+        - travel ban
+        - Brit Awards
+        - British Academy Film Awards
+        - Sapphire Jubilee of Queen Elizabeth II
+        - 89th Academy Awards
+        - Berkeley protests
+        - Shooting of Jocques Clemmons
+  - utterance: What's {findNewsContent_orgName:findNewsContent_orgName} have to say about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Brit Awards
+        - British Academy Film Awards
+        - Sapphire Jubilee of Queen Elizabeth II
+        - 89th Academy Awards
+        - Berkeley protests
+        - Shooting of Jocques Clemmons
+        - Elimination Chamber (2017)
+        - Nevertheless, she persisted
+        - Death of Tim Piazza
+        - Oroville Dam crisis
+        - Writers Guild of America Awards 2016
+        - Murders of Abigail Williams and Liberty German
+        - All-Ireland Senior Club Hurling Championship Final
+        - 22nd Empire Awards
+        - Red Nose Day 2017
+        - Northern Ireland Assembly election, 2017
+        - Westminster attack
+        - United Kingdom invocation of Article 50 of the Treaty on European Union
+        - 38th Young Artist Awards
+        - WWE Hall of Fame (2017)
+        - Vault 7
+        - March 4 Trump
+        - iHeartRadio Music Awards
+
+  - utterance: Has {findNewsContent_eventName:findNewsContent_eventName} been in the news (lately|recently)
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - March 4 Trump
+        - iHeartRadio Music Awards
+        - Laurence Olivier Awards
+        - Kansas's 4th congressional district special election
+        - Georgia's 6th congressional district special election
+        - March for Science
+        - Tax March
+        - Supercard of Honor XI
+        - Shooting of Jordan Edwards
+        - Pulitzer Prize
+        - People's Climate March
+        - Dismissal of James Comey
+        - Great America Committee
+        - North Miami mayoral election
+        - Times Square car crash
+        - Washington wildfires
+        - Shuping Yang commencement speech controversy
+        - Fife Council election
+        - Cambridgeshire and Peterborough mayoral election
+        - Greater Manchester mayoral election
+        - Manchester Arena bombing
+        - Liverpool City Region mayoral election
+        - Welsh local elections
+        - WWE United Kingdom Championship Special
+        - One Love Manchester
+        - Byline Festival
+        - Beckton acid attack
+        - Death of Edson Da Costa
+        - One Love Manchester
+        - Grenfell Tower fire
+        - Finsbury Park attack
+
+  - utterance: Latest news on {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Hill Fire
+        - Holcomb Fire
+        - Trump Free Speech Rally
+        - Manzanita Fire
+        - March Against Sharia
+        - March for Truth
+        - Money in the Bank
+        - Death of Rashan Charles
+        - Wall Fire
+        - Washington wildfires
+        - Winters Fire
+        - WWE Great Balls of Fire
+        - Schaeffer Fire
+        - Slammiversary XV
+        - Shooting of Justine Damond
+        - Day of Action to Save Net Neutrality
+        - Detwiler Fire
+        - Park Creek Fire
+        - Execution of Ronald Phillips
+        - Charlottesville car crash
+        - Charlottesville helicopter crash
+        - Cinder Butte Fire
+        - Killing of Patrick Harmon
+        - High Cascades Complex fires
+        - Hurricane Harvey
+  - utterance: Look up the latest about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Hurricane Harvey
+        - Slinkard Fire
+        - Solar eclipse of August 21, 2017
+        - Strawberry Fire
+        - SummerSlam
+        - Railroad Fire
+        - Reef Fire
+        - Rice Ridge Fire
+        - Munroe Bergdorf race row incident
+        - Parsons Green bombing
+        - Storm Aileen
+        - A Concert for Charlottesville
+        - Abel Cedeno killing incident
+        - Hand in Hand - A Benefit for Hurricane Relief
+        - Hurricane Irma
+        - Hurricane Maria
+        - Park Creek Fire
+        - Peaceful Vancouver Freedom March
+        - Pier Fire
+        - Suicide of Randy Potter
+        - 69th Primetime Creative Arts Emmy Awards
+        - 69th Primetime Emmy Awards
+        - Tom Price private jet scandal
+        - Shooting of Scout Schultz
+  - utterance: News about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Peaceful Vancouver Freedom March
+        - Pier Fire
+        - Suicide of Randy Potter
+        - 69th Primetime Creative Arts Emmy Awards
+        - 69th Primetime Emmy Awards
+        - Tom Price private jet scandal
+        - Shooting of Scout Schultz
+        - Slinkard Fire
+        - 2017 St. Louis protests
+        - Strawberry Fire (2017)
+        - Railroad Fire
+        - Reef Fire
+        - Rice Ridge Fire
+        - Storm Brian
+        - Atlas Fire
+        - Hurricane Nate
+        - Eagle Creek Fire
+        - Global Wars
+        - Atlas Fire
+        - British Academy Scotland Awards
+        - Miami mayoral election
+        - United States elections
+        - Thornton shooting
+        - Storm Caroline
+  - utterance: What's happening with {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Syrian Civil War
+        - North Korea and weapons of mass destruction
+        - Campinas massacre
+        - Istanbul nightclub attack
+        - Baghdad bombings
+        - Brooklyn train crash
+        - Chicago torture incident
+        - Kurdish–Turkish conflict
+        - Syrian Civil War
+        - Fort Lauderdale airport shooting
+        - United States election interference by Russia
+        - Iraqi Civil War
+        - Iran–Saudi Arabia relations
+        - European migrant crisis
+        - Cyprus dispute
+        - Battle of Mosul
+        - War in Afghanistan
+        - Floods in Thailand
+  - utterance: Is there anything new about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Syrian Civil War
+        - Fort Lauderdale airport shooting
+        - United States election interference by Russia
+        - Iraqi Civil War
+        - Iran–Saudi Arabia relations
+        - European migrant crisis
+        - Cyprus dispute
+        - Battle of Mosul
+        - War in Afghanistan
+        - Floods in Thailand
+        - Crisis in Venezuela
+        - Israeli–Palestinian peace process
+        - Kosovo–Serbia relations
+        - Minnehaha Academy gas explosion
+        - Impeachment in the Philippines
+        - Immigration policy of Donald Trump
+  - utterance: Show me everything about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - Holcomb Fire
+        - Trump Free Speech Rally
+        - Manzanita Fire
+        - March Against Sharia
+        - March for Truth
+        - Money in the Bank
+        - Death of Rashan Charles
+        - Wall Fire
+        - Washington wildfires
+        - Winters Fire
+        - WWE Great Balls of Fire
+        - Schaeffer Fire
+        - Slammiversary XV
+        - Shooting of Justine Damond
+        - Day of Action to Save Net Neutrality
+        - Detwiler Fire
+        - Park Creek Fire
+        - Execution of Ronald Phillips
+        - Charlottesville car crash
+        - Charlottesville helicopter crash
+        - Cinder Butte Fire
+        - Killing of Patrick Harmon
+        - High Cascades Complex fires
+        - Hurricane Harvey
+        - Slinkard Fire
+        - Solar eclipse of August 21, 2017
+        - Strawberry Fire
+        - SummerSlam
+        - Railroad Fire
+  - utterance: New posts about {findNewsContent_eventName:findNewsContent_eventName}
+    slots:
+      findNewsContent_eventName:findNewsContent_eventName:
+        - March 4 Trump
+        - iHeartRadio Music Awards
+        - Laurence Olivier Awards
+        - Kansas's 4th congressional district special election
+        - Georgia's 6th congressional district special election
+        - March for Science
+        - Tax March
+        - Supercard of Honor XI
+        - Shooting of Jordan Edwards
+        - Pulitzer Prize
+        - People's Climate March
+        - Dismissal of James Comey
+        - Great America Committee
+        - North Miami mayoral election
+        - Times Square car crash
+        - Washington wildfires
+        - Shuping Yang commencement
+        - Slammiversary XV
+        - Shooting of Justine Damond
+        - Day of Action to Save Net Neutrality
+        - Detwiler Fire
+        - Park Creek Fire
+        - Execution of Ronald Phillips
+        - Charlottesville car crash
+  - utterance: I am looking for {findNewsContent_contentType:findNewsContent_contentType} entitled {findNewsContent_contentItemName:findNewsContent_contentItemName}
+    slots:
+      findNewsContent_contentType:findNewsContent_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+      findNewsContent_contentItemName:findNewsContent_contentItemName:
+        - Chasing the Higgs Boson
+        - The lasting power of King's dream speech
+        - President Obama's Dragnet
+        - Ferguson Became Symbol, but Bias Knows No Border
+        - The iEconomy
+        - How a staten island community became a deathtrap
+        - Snow Fall 
+        - Don't Harsh Our Mellow, Dude
+        - Invisible Child
+        - Abused and Used
+
+getHeadlines:
+  - utterance: Give me {getHeadlines_selectCriteria:getHeadlines_selectCriteria} (headlines|briefing)
+    slots:
+      getContentInfo_selectCriteria:getContentInfo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+  - utterance: (Please pull up the|List|Wish to hear|I'd like to see|I'd like to get|I'm wondering what are the|can you give me the|give me|find|What are|I want|Check|Can you give me|Can you find me|Give me a list of|Tell me the|Can I see|Can you tell me|Provide me|Can I get|Can you bring up|Advise me on|Please find|look for|Help me search|Can you help me find|Do a search for the|Would like to find|Pull up|Lets see|Let's see|I am looking for|I'm looking for|I'd like to find|Look up|Look for|Wish to hear|Please pull up|Give me summary of) the {getHeadlines_selectCriteria:getHeadlines_selectCriteria} (headlines|news)
+    slots:
+      getHeadlines_selectCriteria:
+        - latest
+        - newest
+        - last
+  - utterance: What are the {getHeadlines_selectCriteria:getHeadlines_selectCriteria} headline from {getHeadlines_orgName:getHeadlines_orgName}
+    slots:
+      getHeadlines_selectCriteria:
+        - latest
+        - newest
+        - last
+
+
+getContentInfo:
+  - utterance: "{getContentInfo_selectCriteria:getContentInfo_selectCriteria} the title of the {getContentInfo_contentType:getContentInfo_contentType}"
+    slots:
+      getContentInfo_selectCriteria:getContentInfo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      getContentInfo_contentType:getContentInfo_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+  - utterance: "{getContentInfo_selectCriteria:getContentInfo_selectCriteria} did this {getContentInfo_contentType:getContentInfo_contentType} has been published"
+    slots:
+      getContentInfo_selectCriteria:getContentInfo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      getContentInfo_contentType:getContentInfo_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+  - utterance: "{getContentInfo_selectCriteria:getContentInfo_selectCriteria} did this {getContentInfo_contentType:getContentInfo_contentType} come out"
+    slots:
+      getContentInfo_selectCriteria:getContentInfo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      getContentInfo_contentType:getContentInfo_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+  - utterance: "{getContentInfo_selectCriteria:getContentInfo_selectCriteria} has been mentioned in this {getContentInfo_contentType:getContentInfo_contentType}"
+    slots:
+      getContentInfo_selectCriteria:getContentInfo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      getContentInfo_contentType:getContentInfo_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+  - utterance: "{getContentInfo_selectCriteria:getContentInfo_selectCriteria} are the places that have been mentioned in this {getContentInfo_contentType:getContentInfo_contentType}"
+    slots:
+      getContentInfo_selectCriteria:getContentInfo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      getContentInfo_contentType:getContentInfo_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+  - utterance: "{getContentInfo_selectCriteria:getContentInfo_selectCriteria} published this {getContentInfo_contentType:getContentInfo_contentType}"
+    slots:
+      getContentInfo_selectCriteria:getContentInfo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      getContentInfo_contentType:getContentInfo_contentType:
+        - articles
+        - podcasts
+        - TV shows
+        - TV programs
+
+readArticle:
+  - utterance: "{readArticle_command:readArticle_command} reading {readArticle_selectCriteria:readArticle_selectCriteria} {readArticle_contentType:readArticle_contentType}"
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_selectCriteria:readArticle_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      readArticle_contentType:readArticle_contentType:
+        - article
+        - piece
+        - thread
+
+  - utterance: Read {readArticle_selectCriteria:readArticle_selectCriteria} {readArticle_contentType:readArticle_contentType}
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_contentType:readArticle_contentType:
+        - article
+        - piece
+        - thread
+  - utterance: Read {readArticle_contentType:readArticle_contentType} entitled {readArticle_contentItemName:readArticle_contentItemName}
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_contentItemName:readArticle_contentItemName:
+        - Chasing the Higgs Boson
+        - The lasting power of King's dream speech
+        - President Obama's Dragnet
+        - Ferguson Became Symbol, but Bias Knows No Border
+        - The iEconomy
+        - How a staten island community became a deathtrap
+        - Snow Fall 
+        - Don't Harsh Our Mellow, Dude
+        - Invisible Child
+        - Abused and Used
+
+  - utterance: "{readArticle_command:readArticle_command} reading {readArticle_selectCriteria:readArticle_selectCriteria} entitled {readArticle_contentType:readArticle_contentType}"
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_selectCriteria:readArticle_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      readArticle_contentItemName:readArticle_contentItemName:
+        - Chasing the Higgs Boson
+        - The lasting power of King's dream speech
+        - President Obama's Dragnet
+        - Ferguson Became Symbol, but Bias Knows No Border
+        - The iEconomy
+        - How a staten island community became a deathtrap
+        - Snow Fall 
+        - Don't Harsh Our Mellow, Dude
+        - Invisible Child
+        - Abused and Used
+
+  - utterance: "{readArticle_command:readArticle_command} reading {readArticle_contentType:readArticle_contentType} entitled {readArticle_contentItemName:readArticle_contentItemName}"
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_contentType:readArticle_contentType:
+        - article
+        - piece
+        - thread
+      readArticle_contentItemName:readArticle_contentItemName:
+        - Chasing the Higgs Boson
+        - The lasting power of King's dream speech
+        - President Obama's Dragnet
+        - Ferguson Became Symbol, but Bias Knows No Border
+        - The iEconomy
+        - How a staten island community became a deathtrap
+        - Snow Fall 
+        - Don't Harsh Our Mellow, Dude
+        - Invisible Child
+        - Abused and Used
+
+  - utterance: "{readArticle_command:readArticle_command} reading {readArticle_selectCriteria:readArticle_selectCriteria} {readArticle_contentType:readArticle_contentType}"
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_selectCriteria:readArticle_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      readArticle_contentType:readArticle_contentType:
+        - article
+        - piece
+        - thread
+  - utterance: "{readArticle_command:readArticle_command} reading {readArticle_contentType:readArticle_contentType} entitled {readArticle_contentItemName:readArticle_contentItemName}"
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_contentType:readArticle_contentType:
+        - article
+        - piece
+        - thread
+      readArticle_contentItemName:readArticle_contentItemName:
+        - Chasing the Higgs Boson
+        - The lasting power of King's dream speech
+        - President Obama's Dragnet
+        - Ferguson Became Symbol, but Bias Knows No Border
+        - The iEconomy
+        - How a staten island community became a deathtrap
+        - Snow Fall 
+        - Don't Harsh Our Mellow, Dude
+        - Invisible Child
+        - Abused and Used
+
+  - utterance: "{readArticle_command:readArticle_command} reading {readArticle_selectCriteria:readArticle_selectCriteria} [article](readArticle_contentType)"
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_selectCriteria:readArticle_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+
+  - utterance: "{readArticle_command:readArticle_command} reading {readArticle_contentType:readArticle_contentType} entitled {readArticle_contentItemName:readArticle_contentItemName}"
+    slots:
+      readArticle_command:readArticle_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      readArticle_contentType:readArticle_contentType:
+        - article
+        - piece
+        - thread
+      readArticle_contentItemName:readArticle_contentItemName:
+        - Chasing the Higgs Boson
+        - The lasting power of King's dream speech
+        - President Obama's Dragnet
+        - Ferguson Became Symbol, but Bias Knows No Border
+        - The iEconomy
+        - How a staten island community became a deathtrap
+        - Snow Fall 
+        - Don't Harsh Our Mellow, Dude
+        - Invisible Child
+        - Abused and Used
+
+listenPodcast:
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening to {listenPodcast_selectCriteria:listenPodcast_selectCriteria} {listenPodcast_contentType:listenPodcast_contentType}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_selectCriteria:listenPodcast_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening {listenPodcast_contentType:listenPodcast_contentType} entitled {listenPodcast_contentItemName:listenPodcast_contentItemName}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+      listenPodcast_contentItemName:listenPodcast_contentItemName:
+        - How Not to Pitch a Billionaire
+        - Is Podcasting the Future or the Past?
+        - How to Divide an Imaginary Pie
+        - Startups Are a Risky Business
+        - How to Name Your Company
+        - We Made A Mistake
+        - Our New Show
+        - How Listeners Become Owners
+        - How to Value Your Startup
+        - Mixing Art and Business
+        - Know Your Customer
+        - Burnout
+        - Fake It Til You Make It
+        - Where We Are
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening to {listenPodcast_selectCriteria:listenPodcast_selectCriteria} {listenPodcast_contentType:listenPodcast_contentType}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_selectCriteria:listenPodcast_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening {listenPodcast_contentType:listenPodcast_contentType} entitled {listenPodcast_contentItemName:listenPodcast_contentItemName}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+      listenPodcast_contentItemName:listenPodcast_contentItemName:
+        - How Not to Pitch a Billionaire
+        - Is Podcasting the Future or the Past?
+        - How to Divide an Imaginary Pie
+        - Startups Are a Risky Business
+        - How to Name Your Company
+        - We Made A Mistake
+        - Our New Show
+        - How Listeners Become Owners
+        - How to Value Your Startup
+        - Mixing Art and Business
+        - Know Your Customer
+        - Burnout
+        - Fake It Til You Make It
+        - Where We Are
+
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening to {listenPodcast_selectCriteria:listenPodcast_selectCriteria} {listenPodcast_contentType:listenPodcast_contentType}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_selectCriteria:listenPodcast_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening {listenPodcast_contentType:listenPodcast_contentType} entitled {listenPodcast_contentItemName:listenPodcast_contentItemName}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+      listenPodcast_contentItemName:listenPodcast_contentItemName:
+        - How Not to Pitch a Billionaire
+        - Is Podcasting the Future or the Past?
+        - How to Divide an Imaginary Pie
+        - Startups Are a Risky Business
+        - How to Name Your Company
+        - We Made A Mistake
+        - Our New Show
+        - How Listeners Become Owners
+        - How to Value Your Startup
+        - Mixing Art and Business
+        - Know Your Customer
+        - Burnout
+        - Fake It Til You Make It
+        - Where We Are
+
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening to {listenPodcast_selectCriteria:listenPodcast_selectCriteria} {listenPodcast_contentType:listenPodcast_contentType}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_selectCriteria:listenPodcast_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+
+  - utterance: "{listenPodcast_command:listenPodcast_command} listening {listenPodcast_contentType:listenPodcast_contentType} entitled {listenPodcast_contentItemName:listenPodcast_contentItemName}"
+    slots:
+      listenPodcast_command:listenPodcast_command:
+        - start
+        - stop
+        - pause
+        - suspend
+      listenPodcast_contentType:listenPodcast_contentType:
+        - podcast
+        - show
+      listenPodcast_contentItemName:listenPodcast_contentItemName:
+        - How Not to Pitch a Billionaire
+        - Is Podcasting the Future or the Past?
+        - How to Divide an Imaginary Pie
+        - Startups Are a Risky Business
+        - How to Name Your Company
+        - We Made A Mistake
+        - Our New Show
+        - How Listeners Become Owners
+        - How to Value Your Startup
+        - Mixing Art and Business
+        - Know Your Customer
+        - Burnout
+        - Fake It Til You Make It
+        - Where We Are
+
+watchVideo:
+  - utterance: "{watchVideo_command:watchVideo_command} watching {watchVideo_selectCriteria:watchVideo_selectCriteria} entitled {watchVideo_contentItemName:watchVideo_contentItemName}"
+    slots:
+      watchVideo_command:watchVideo_command:
+        - start
+        - play
+      watchVideo_selectCriteria:watchVideo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      watchVideo_contentItemName:watchVideo_contentItemName:
+        - The White Helmets
+        - What Happened, Miss Simone?
+        - Brexit
+        - Immigration Courts
+        - Cryptocurrencies
+        - Italian Election
+
+
+  - utterance: "{watchVideo_command:watchVideo_command} watching {watchVideo_selectCriteria:watchVideo_selectCriteria} {watchVideo_contentType:watchVideo_contentType}"
+    slots:
+      watchVideo_command:watchVideo_command:
+        - start
+        - play
+      watchVideo_selectCriteria:watchVideo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      watchVideo_contentType:watchVideo_contentType:
+        - TV show
+        - TV program
+        - television program
+        - video 
+
+  - utterance: "{watchVideo_command:watchVideo_command} watching {watchVideo_contentType:watchVideo_contentType} entitled {watchVideo_contentItemName:watchVideo_contentItemName}"
+    slots:
+      watchVideo_command:watchVideo_command:
+        - start
+        - play
+      watchVideo_contentType:watchVideo_contentType:
+        - TV show
+        - TV program
+        - television program
+        - video 
+      watchVideo_contentItemName:watchVideo_contentItemName:
+        - The White Helmets
+        - What Happened, Miss Simone?
+        - Brexit
+        - Immigration Courts
+        - Cryptocurrencies
+        - Italian Election
+
+  - utterance: "{watchVideo_command:watchVideo_command} watching {watchVideo_selectCriteria:watchVideo_selectCriteria} {watchVideo_contentType:watchVideo_contentType}"
+    slots:
+      watchVideo_command:watchVideo_command:
+        - start
+        - play
+      watchVideo_selectCriteria:watchVideo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      watchVideo_contentType:watchVideo_contentType:
+        - TV show
+        - TV program
+        - television program
+        - video 
+
+  - utterance: "{watchVideo_command:watchVideo_command} watching {watchVideo_contentType:watchVideo_contentType} {watchVideo_contentItemName:watchVideo_contentItemName}"
+    slots:
+      watchVideo_command:watchVideo_command:
+        - start
+        - play
+      watchVideo_contentType:watchVideo_contentType:
+        - TV show
+        - TV program
+        - television program
+        - video 
+
+  - utterance: "{watchVideo_command:watchVideo_command} watching to {watchVideo_selectCriteria:watchVideo_selectCriteria} {watchVideo_contentType:watchVideo_contentType}"
+    slots:
+      watchVideo_command:watchVideo_command:
+        - start
+        - play
+      watchVideo_selectCriteria:watchVideo_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      watchVideo_contentType:watchVideo_contentType:
+        - TV show
+        - TV program
+        - television program
+        - video 
+
+  - utterance: "{watchVideo_command:watchVideo_command} watching {watchVideo_contentType:watchVideo_contentType} {watchVideo_contentItemName:watchVideo_contentItemName}"
+    slots:
+      watchVideo_command:watchVideo_command:
+        - start
+        - play
+      watchVideo_contentType:watchVideo_contentType:
+        - TV show
+        - TV program
+        - television program
+        - video 
+      watchVideo_contentItemName:watchVideo_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+
+addContentItemToCollection:
+  - utterance: (Would you please|Please| ) add the {addContentItemToCollection_contentType:addContentItemToCollection_contentType} {addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName} to {addContentItemToCollection_collectionName:addContentItemToCollection_collectionName} (list|collection)
+    slots:
+      addContentItemToCollection_contentType:addContentItemToCollection_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+      addContentItemToCollection_collectionName:addContentItemToCollection_collectionName:
+        - politics 
+        - long read
+        - morning read
+        - weekend read 
+  - utterance: (Would you please|Please| ) include the {addContentItemToCollection_contentType:addContentItemToCollection_contentType} {addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName} to {addContentItemToCollection_collectionName:addContentItemToCollection_collectionName} (list|collection)
+    slots:
+      addContentItemToCollection_contentType:addContentItemToCollection_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+      addContentItemToCollection_collectionName:addContentItemToCollection_collectionName:
+        - politics 
+        - long read
+        - morning read
+        - weekend read 
+  - utterance: (Would you please|Please| ) add another {addContentItemToCollection_contentType:addContentItemToCollection_contentType} {addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName} to {addContentItemToCollection_collectionName:addContentItemToCollection_collectionName} (list|collection)
+    slots:
+      addContentItemToCollection_contentType:addContentItemToCollection_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace  
+      addContentItemToCollection_collectionName:addContentItemToCollection_collectionName:
+        - politics 
+        - long read
+        - morning read
+        - weekend read 
+  - utterance: (Would you please|Please| ) add the {addContentItemToCollection_contentType:addContentItemToCollection_contentType} {addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName} to [my](addContentItemToCollection_userOwner) {addContentItemToCollection_collectionName:addContentItemToCollection_collectionName} (list|collection)
+    slots:
+      addContentItemToCollection_contentType:addContentItemToCollection_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace  
+      addContentItemToCollection_collectionName:addContentItemToCollection_collectionName:
+        - politics 
+        - long read
+        - morning read
+        - weekend read 
+
+  - utterance: (Would you please|Please| ) add the {addContentItemToCollection_contentType:addContentItemToCollection_contentType} {addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName} to {addContentItemToCollection_collectionName:addContentItemToCollection_collectionName}
+    slots:
+      addContentItemToCollection_contentType:addContentItemToCollection_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace  
+      addContentItemToCollection_collectionName:addContentItemToCollection_collectionName:
+        - politics 
+        - morning read
+        - weekend read 
+
+  - utterance: (Would you please|Please| ) add {addContentItemToCollection_contentType:addContentItemToCollection_contentType} {addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName} to {addContentItemToCollection_collectionName:addContentItemToCollection_collectionName} (list|collection)
+    slots:
+      addContentItemToCollection_contentType:addContentItemToCollection_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace  
+      addContentItemToCollection_collectionName:addContentItemToCollection_collectionName:
+        - politics 
+        - business
+        - Sports
+        - funny 
+  - utterance: (Would you please|Please| ) add {addContentItemToCollection_selectCriteria:addContentItemToCollection_selectCriteria} {addContentItemToCollection_contentType:addContentItemToCollection_contentType} to {addContentItemToCollection_collectionName:addContentItemToCollection_collectionName} (list|collection| )
+    slots:
+      addContentItemToCollection_contentType:addContentItemToCollection_contentType:
+        - article
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      addContentItemToCollection_selectCriteria:addContentItemToCollection_selectCriteriav:
+        - this
+      addContentItemToCollection_contentItemName:addContentItemToCollection_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace    
+      addContentItemToCollection_collectionName:addContentItemToCollection_collectionName:
+        - politics 
+        - business
+        - Sports
+        - funny 
+
+bookmarkContentItem:
+  - utterance: bookmark {bookmarkContentItem_selectCriteria:bookmarkContentItem_selectCriteria} {bookmarkContentItem_contentType:bookmarkContentItem_contentType}
+    slots:
+      bookmarkContentItem_selectCriteria:bookmarkContentItem_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      bookmarkContentItem_contentType:bookmarkContentItem_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+
+  - utterance: bookmark {bookmarkContentItem_contentType:bookmarkContentItem_contentType} entitled {bookmarkContentItem_contentItemName:bookmarkContentItem_contentItemName}
+    slots:
+      bookmarkContentItem_contentType:bookmarkContentItem_contentType:
+        - article
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      bookmarkContentItem_contentItemName:bookmarkContentItem_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+  - utterance: bookmark {bookmarkContentItem_contentItemName:bookmarkContentItem_contentItemName} {bookmarkContentItem_contentType:bookmarkContentItem_contentType}
+    slots:
+      bookmarkContentItem_contentItemName:bookmarkContentItem_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+      bookmarkContentItem_contentType:bookmarkContentItem_contentType:
+        - article
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+
+rateContentItem:
+  - utterance: rate {rateContentItem_contentItemName:rateContentItem_contentItemName} {rateContentItem_contentType:rateContentItem_contentType} {rateContentItem_ratingValue:rateContentItem_ratingValue} (stars|points)
+    slots:
+      rateContentItem_contentItemName:rateContentItem_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+      rateContentItem_contentType:rateContentItem_contentType:
+        - article
+        - piece
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      rateContentItem_ratingValue:rateContentItem_ratingValue:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5' 
+        - zero
+        - one
+        - two
+        - three
+        - four
+        - five
+
+shareContentItem:
+  - utterance: share {shareContentItem_contentType:shareContentItem_contentType} entitled {shareContentItem_contentItemName:shareContentItem_contentItemName} on {shareContentItem_socialNetwork:shareContentItem_socialNetwork}
+    slots:
+      shareContentItem_contentType:shareContentItem_contentType:
+        - article
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      shareContentItem_contentItemName:shareContentItem_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+      shareContentItem_socialNetwork:shareContentItem_socialNetwork:
+        - Facebook 
+        - Twitter
+        - WeChat
+        - Tumblr
+        - Instagram
+        - Snapchat
+        - Pinterest
+        - LinkedIn
+        - Reddit
+        - Foursquare
+        - Badoo
+        - StumbleUpon
+emailContentItem:
+  - utterance: Send {emailContentItem_selectCriteria:emailContentItem_selectCriteria} {emailContentItem_contentType:emailContentItem_contentType} entitled {emailContentItem_contentItemName:emailContentItem_contentItemName} to {emailContentItem_receipent:emailContentItem_receipent}
+    slots:
+      emailContentItem_selectCriteria:emailContentItem_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+
+      emailContentItem_contentItemName:emailContentItem_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+      emailContentItem_contentType:emailContentItem_contentType:
+        - article
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      emailContentItem_receipent:emailContentItem_receipent:
+        - lisa@outlook.com
+        - mariam@me.com
+        - ahmed@gmail.com
+        - john@gmail.com
+
+favoriteContentItem:
+  - utterance: Favorite {favoriteContentItem_selectCriteria:favoriteContentItem_selectCriteria} {favoriteContentItem_contentType:favoriteContentItem_contentType} entitled {favoriteContentItem_contentItemName:favoriteContentItem_contentItemName}
+    slots:
+      favoriteContentItem_selectCriteria:favoriteContentItem_selectCriteria:
+        - last
+        - this
+      favoriteContentItem_contentType:favoriteContentItem_contentType:
+        - article
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video 
+      favoriteContentItem_contentItemName:favoriteContentItem_contentItemName:
+        - American dreamers
+        - US elections - Analysis 
+        - French Elections - Race to the Elysee Palace
+
+  - utterance: Favorite {favoriteContentItem_selectCriteria:favoriteContentItem_selectCriteria} {favoriteContentItem_contentType:favoriteContentItem_contentType}
+    slots:
+      favoriteContentItem_selectCriteria:favoriteContentItem_selectCriteria:
+        - last
+        - this
+        - next
+        - current
+        - following
+        - this current
+        - previous
+      favoriteContentItem_contentType:favoriteContentItem_contentType:
+        - article
+        - podcast
+        - show
+        - TV show
+        - TV program
+        - television program
+        - video
