@@ -3,13 +3,20 @@ import logging
 
 
 class SocialMediaManager():
-    def __init__(self, config):
-        self.socialmedia_config = config
+    def __init__(self, socialmedia_config):
+        """
+        :param socialmedia_config:
+        :type socialmedia_config: :py:class:`dict`
+        """
+        self.socialmedia_config = socialmedia_config
 
     def share_on_twitter(self, tweet):
         """
         share a link on twitter
+
         :param tweet:
+        :type tweet: :py:class:`str`
+
         :return:
         """
         consumer_key = self.socialmedia_config.get("Twitter").get("consumer_key")
@@ -22,3 +29,14 @@ class SocialMediaManager():
         api = API(auth)
         api.update_status(tweet)
         logging.info("%s has been tweeted" % tweet)
+
+    def set_tweet(self, title):
+        """
+        set content
+
+        :param title:
+        :type title: :py:class:`str`
+
+        :return:
+        """
+        return title

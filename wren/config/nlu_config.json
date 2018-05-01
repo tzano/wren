@@ -1,10 +1,7 @@
 {
-  "name": "wren_nlu",
   "num_threads": 5,
   "pipeline": "spacy_sklearn",
-  "path" : "./models",
-  "data" : "./data/wren_training_dataset.json",
-  "fixed_model_name": "wren_nlu_model",
-  "log_level": "DEBUG",
-  "project": "wren_nlu"
+  "path" : "/Users/tahar/Dropbox/tz_experiments/on_going/wren/wren/models/",
+  "data" : "./data/wren_utterances.json",
+  "log_level": "DEBUG"
 }

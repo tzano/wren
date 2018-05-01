@@ -1,4 +1,5 @@
 import subprocess, shlex
+from resources.constants import SENTISTRENGHT_JAR, SENTISTRENGHT_DIR
 
 
 class SentiStrength():
@@ -9,7 +10,7 @@ class SentiStrength():
     """
     SentiStrength_ENDPOINT = 'http://sentistrength.wlv.ac.uk/results.php'
 
-    def __init__(self, jar_path="../resources/SentiStrength.jar", dir_path="../resources/sentstrength_data/"):
+    def __init__(self, jar_path=SENTISTRENGHT_JAR, dir_path=SENTISTRENGHT_DIR):
         self.jar_path = jar_path
         self.dir_path = dir_path
 

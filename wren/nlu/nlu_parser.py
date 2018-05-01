@@ -39,10 +39,10 @@ class NLUParser():
         :param message: message from client to be parsed
         :type message: :py:class:`str`
         """
-        response = self._get("{}/parse".format(self.nlu_server), data={"q": message, "project": self.project_name, "model": self.model_name})
+        response = self._get("{}/parse".format(self.nlu_server), data={"q": message}) # , "project": self.project_name, "model": self.model_name
         parsed_data = response.json()
 
-        if parsed_data['intent']['confidence'] < MIN_THRESHOLD:
+        if parsed_data.get('intent', {}).get('confidence', -1) < MIN_THRESHOLD:
             intent = None
             entities = []
         else:

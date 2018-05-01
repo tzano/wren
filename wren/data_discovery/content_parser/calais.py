@@ -1,6 +1,6 @@
 import requests
 import logging
-from data_discovery.content_parser.models.content_parser import ContentParser
+from data_discovery.content_parser.content_parser import ContentParser
 
 
 class CalaisAPI(ContentParser):

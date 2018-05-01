@@ -1,0 +1,9 @@
+slack:
+  slack_webhook_secret: "xoxb-"
+  api_key: "xoxb-"
+  bot_name: "wren"
+  channel_name: "news"
+
+facebook:
+  access_token: ""
+  verify_token: ""

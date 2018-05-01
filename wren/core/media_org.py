@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from article import Article
-from podcast import Podcast
-from video import Video
+from core.article import Article
+from core.podcast import Podcast
+from core.video import Video
 from abc import ABCMeta
 from os.path import join, dirname, abspath
 import yaml

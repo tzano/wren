@@ -1,39 +1,50 @@
 version: '3.3'
 
 services:
-  # mongodb:
-  #   image: mongo:latest
-  #   container_name: mongodb
-  #   environment:
-  #     - MONGO_DATA_DIR=/data/db
-  #     - MONGO_LOG_DIR=/dev/null
-  #   volumes:
-  #     - ./data/db:/data/db
-  #   ports:
-  #       - 27017:27017
-  #   command: mongod --smallfiles --logpath=/dev/null # --quiet
-  #   networks:
-  #     - wren_network
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    ports:
+        - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+    networks:
+      - wren_network
 
-  # kafka:
-  #   image: spotify/kafka:latest
-  #   container_name: kafka
-  #   ports:
-  #     - 2181:2181
-  #     - 9092:9092
-  #   hostname: kafka
-  #   networks:
-  #     - wren_network
+  kafka:
+    image: spotify/kafka:latest
+    container_name: kafka
+    ports:
+      - 2181:2181
+      - 9092:9092
+    hostname: kafka
+    networks:
+      - wren_network
 
-  # elasticsearch:
-  #   image: elasticsearch:2.0
-  #   container_name: elasticsearch
-  #   ports:
-  #     - 9200:9200
-  #     - 9300:9300
-  #   hostname: es
-  #   networks:
-  #     - wren_network
+  elasticsearch:
+    image: elasticsearch:2.0
+    container_name: elasticsearch
+    ports:
+      - 9200:9200
+      - 9300:9300
+    hostname: es
+    networks:
+      - wren_network
+
+  nlu_server:
+    build: ./rasa/.
+    container_name: nlu_server
+    ports:
+      - 5000:5000
+    tty: true
+    volumes:
+      - ./:/app
+    networks:
+      - wren_network
 
    app:
      build: ./wren_app/.
@@ -42,26 +53,17 @@ services:
        - 5001:5001
      tty: true
      volumes:
-       - ../wren:/usr/src/app
-#     links:
-#       - mongodb
-#       - kafka
-#       - elasticsearch
-#     depends_on:
-#       - kafka
-#       - mongodb
-#       - elasticsearch
-     networks:
-       - wren_network
-
-   nlu_server:
-     build: ./rasa/.
-     container_name: nlu_server
-     ports:
-       - 5000:5000
-     tty: true
-     volumes:
-       - ../wren:/app
+       - ../:/usr/src/app
+    links:
+      - mongodb
+      - kafka
+      - elasticsearch
+      # - nlu_server
+    depends_on:
+      - kafka
+      - mongodb
+      - elasticsearch
+      # - nlu_server
      networks:
        - wren_network
 

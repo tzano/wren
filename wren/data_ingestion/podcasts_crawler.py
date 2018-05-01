@@ -1,11 +1,11 @@
 
-from models.scheduler import Scheduler
+from core.scheduler import Scheduler
 from threading import Thread
 import logging
 import time
 from resources.constants import WSJ, USTODAY, GUARDIAN, THEGLOBAEANDMAIL, TELEGRAPH, REUTERS, NYTIMES, NYPOST, \
     HUFFINGTONPOST, CNN, ALJAZEERA, BBC, MEDIA_TYPE_PODCASTS, EMPTY_STR, EMPTY_DICT, EMPTY_LIST, EN_LANG
-from data_ingestion.media_org import NewsMediaOrg
+from core.media_org import NewsMediaOrg
 
 
 class PodcastsCrawler(Scheduler):
