@@ -104,8 +104,6 @@ python -m wren.tests.test_transcriber
 ## Demo
 
 ![ScreenShot](/docs/images/wren_slack.png)
-
-![ScreenShot](/docs/images/wren_news_analytics.png)
 **Figure 2.** Wren Slack Chatbot
 
 ## References
