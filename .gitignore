@@ -8,6 +8,7 @@ __pycache__/
 
 ../.idea/
 .idea/
+./wren/config/*py
 
 # Distribution / packaging
 .Python
