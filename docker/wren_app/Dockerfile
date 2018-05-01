@@ -7,7 +7,11 @@ RUN pip install --upgrade pip
 
 RUN mkdir /usr/src/app
 
+
 WORKDIR /usr/src/app
+
+
+RUN ls
 
 COPY requirements.txt ./
 

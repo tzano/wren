@@ -7,5 +7,11 @@ jinja2
 numpy
 pymongo
 python-dateutil
-smtplib
 tweepy
+slackclient
+pyvona
+coloredlogs
+rasa_nlu[spacy]
+spacy
+rasa_core
+
