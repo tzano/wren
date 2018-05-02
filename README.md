@@ -11,11 +11,11 @@ As some readers (including myself) want to read the news beyond their cozy filte
 
 Wren is a system that allows users to automatically parse news content from myriad sources, use NLP technology to enrich news discovery, and store data to easily source and search the enriched news data through conversational interfaces. The system consists of three layers: 
 
-(1) Data Ingestion: News aggregation layer to monitor, and ingest data from a list of international news sources. The tool can monitor RSS feeds, parse, acquire, and store the content of several online news sources. 
+(1) **Data Ingestion:** News aggregation layer to monitor, and ingest data from a list of international news sources. The tool can monitor RSS feeds, parse, acquire, and store the content of several online news sources. 
 
-(2) Data Discovery: A Content Analysis layer to process and analyze news articles. This modular layer can extract entities, concepts, keywords, taxonomies, perform sentiment analysis on news content and monitor the news popularity on social media. 
+(2) **Data Discovery:** A Content Analysis layer to process and analyze news articles. This modular layer can extract entities, concepts, keywords, taxonomies, perform sentiment analysis on news content and monitor the news popularity on social media. 
 
-(4) Dialog: A conversational system, trained using [RASA](https://github.com/RasaHQ/rasa_nlu) to query the enriched news content.
+(3) **Dialog:** A conversational system, trained using [RASA](https://github.com/RasaHQ/rasa_nlu) to query the enriched news content.
 
 The tool can be also helpful for data journalists to find stories, easily.
 
