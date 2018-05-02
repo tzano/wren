@@ -2,7 +2,7 @@
 
 ![ScreenShot](/docs/images/wren.jpg)
 
-Wren is a conversational News Chatbot that enables users to discover and explore daily news stories. 
+Wren is a tool that enables users to monitor, discover and explore daily news stories.
 
 As some readers (including myself) want to read the news beyond their cozy filter bubble, Wren has been designed as an experiment to explore, read and listen to news stories through conversational interfaces (Slack,.. etc). 
 
