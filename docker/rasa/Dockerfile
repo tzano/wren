@@ -18,10 +18,10 @@ RUN pip install -r requirements.txt --upgrade
 
 # get spacy data
 #RUN python -m spacy link en_core_web_md en
-#RUN python -m spacy download en
+RUN python -m spacy download en
 
 # Port
 EXPOSE 5000
 
 # run Rasa server
-# CMD ["python", "-m", "rasa_nlu.server", "-c", "config/nlu_config.json", "--path", "/app/"]
+CMD ["python", "-m", "rasa_nlu.server", "-c", "config/nlu_config.json", "--path", "/app/"]

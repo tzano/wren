@@ -4,7 +4,7 @@
 
 Wren is a Conversational News Chatbot that enable users to discover and explore daily news. 
 
-As some readers (including myself) want to read the news beyond their cozy filter bubble, Wren has been designed as an experiment to explore, read and listen to news through Messaging platforms (Slack, Telegram and Skype). 
+As some readers (including myself) want to read the news beyond their cozy filter bubble, Wren has been designed as an experiment to explore, read and listen to news through Messaging platforms (Slack,.. etc). 
 
 
 ## What is Wren ? 
@@ -29,6 +29,34 @@ The process starts by listening to RSS Feeds to collect recent published content
 In order to build a conversational system, we designed all the intents that users can use to query the data. A survey has been designed to explore how smart assistants are used to consume news. Then, a list of intents has been determined to reflect how people's choices. The full list of intents can be accessed through this [page](/docs/news_assistant.md). We used [Fountain](https://github.com/tzano/fountain), a natural language data augmentation tool, to generate more than [20,000 samples](/wren/data/wren_training_dataset.json). In case you want to build upon the project, you can use the same template to expand it and create more intents that meets your requirements. The file is accessible [here](/wren/data/wren_training_gen_fountain.yaml). 
 
 The idea is to cover the main and the most reliable news sources around the world. We started with dozen of sources, and we are expanding the list to cover more sources. This list of sources does not claim to be a representive sample of all news sources. Recently, Facebook released a list of 1,000 [RSS feeds](https://fbnewsroomus.files.wordpress.com/2016/05/rss-urls.pdf) that it says it uses to crawl for interesting news stories. The goal is to use a similar list to enrich our list of news organizations.
+
+
+### Functionalities 
+- Collecting News Media Content (Articles, Podcasts, Videos) from [different news organizations](wren/config/rss_feeds.yml)
+- Extracting entities, concepts, keywords & taxonomies from News Media Content.
+- Storing Data in one centralized DB
+- We crowdsourced, and trained [the model](/docs/news_assistant.md) with more than 20,000 queries. This [data](/wren/data/wren_training_dataset.json) is freely available for other developers to use. 
+- Built Slackbot to query News Media Content through a conversational interface, served by the model.
+- Added support to read articles, by converting Article Content (Text) to Audio. 
+- Find & Listen to podcasts.
+- Find & Watch videos.  
+
+
+### Project Structure 
+- **core** includes main classes to `Article`, `Podcast`, `Video`, `Media Organization`
+- **data_ingestion** contains classes to collect data from [different news organizations](wren/config/rss_feeds.yml).
+- **data_discovery** contains classes to enrich the data using NLP services.
+- **conversations** contains implementations to connect to external messaging platforms 
+- **nlu** contains NLU parser to translate questions to queries using wren model
+- **actions** contains classes that handles queries like querying news db, sharing content, reading news, listening to podcasts,..etc
+- **data** includes training dataset and [Fountain](http://github.com/tzano/Fountain) template if you need to generate and enrich training dataset
+- **models** includes models that has been trained using RASA.
+- **config** includes all the configuration files. 
+- **connectors** contains interfaces and implementation to connect to database engines.
+
+- **docker** includes `docker-compose` along with other `Dockerfiles` to run our services on Docker.
+
+
 
 ### Getting Started
 
@@ -58,15 +86,9 @@ $ docker inspect docker_wren_network
 python -m rasa_nlu.train -c config/nlu_config.json
 ```
 
-- Run Rasa Server
+- Test Rasa Server
 ```bash
-python -m rasa_nlu.server -c config/nlu_config.json --path ./models/
-python -m rasa_nlu.server -c nlu_config.json --path ./models/
-```
-
-- Run Rasa Server
-```bash
-curl 'http://<SERVER>:5000/parse?q=news&project=wren_nlu&model=wren_nlu_model'
+curl 'http://<SERVER>:5000/status'
 ```
 
 
@@ -78,6 +100,7 @@ In order to better manage the project, we use 4 main configuration files
 - Supported discovery services configuration file `services.yml`
 - Social Services keys file `keys.yml`
 - Messaging Platforms `messaging_platforms.yml`
+
 
 ### Services 
 
