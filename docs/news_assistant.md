@@ -1,15 +1,15 @@
 # Building News Chatbot Training Dataset
 
-Chatbots are programs that interact with user through conversational interfaces (using auditory or te.g.tual methods.)
+Wren is a tool that enables users to discover and explore daily news stories. As part of the project, we built a Chatbot that is able to understand the intentions behind the user's queries, and provide releavant news stories. However, Chatbots are only as good as the training they are given. Building a representative set of intents is an important process and one that requires iteration. 
 
-The main job of chatbots is to be able to understand the intentions behind the user's question, and provide an answer.  
+In order to determine the intents, we talked to a group of people to understand how they use assistants (like Alexa, Google Home) to discover and explore news. At the end of the session, we came out with a generic scenario. On a specific time during the day, users look for News Content (`Articles`, `Podcasts`, `TV shows`) based on different factors (They look for a specific `Topic`, news in certain `Time` or `Place`, or articles that discusses a `Person`). Once they find the right headline, they select a content Item to read, listen or watch it. After interacting with the content, users try to bookmark it or share the content item on social platforms.
 
-In our project, we would like to build a Conversational News Chatbot that enable users to discover and e.g.plore daily news. The chatbot can answer different general question. However, generally speaking Chatbots are only as good as the training they are given. Building a representative set of intents is an important process and one that requires iteration. 
+Based on this scenario, we summarized the set of intents that we built for our chatbot. We use [`Fountain`](https://github.com/tzano/fountain) a Natural Language Data Augmentation Tool for Conversational Systems to generate the training dataset.
 
-In order to determine the intents, we imagined this daily scenario. On a specific time during the day, users check the web to look for a News Content (articles/podcasts/TV shows) or filter based on different factors (Topic/Time/Place/Person). Once they find the right headline, they select a content Item to read, listen or watch it. After interacting with the content, users try to share it or like the content item on social platforms.
 
-In the following part, we summarize the set of intents that we built for our chatbot. We use [`Fountain`](https://github.com/tzano/fountain) a Natural Language Data Generation Tool for Conversational Systems to generate the training dataset.
+If you are a researcher, a data journalist or a developer, you can directly download and use the [**News Chatbot Training Dataset**] or expand the `Fountain` template [that can be accessed here](https://github.com/tzano/wren/blob/master/wren/data/wren_training_gen_fountain.yaml) and add more intents in a way that meets your requirements. 
 
+Below, you find a summary on all the intents used in the project. 
 
 ## Find News Content (articles/podcasts/TV shows) or filter based on different mediums (Topic/Time/Place/Person)
 
@@ -337,7 +337,6 @@ In the following part, we summarize the set of intents that we built for our cha
 ```
 - bookmarkContentItem_contentItemName
 - bookmarkContentItem_selectCriteria
-- bookmarkContentItem_selectCriteria
 - bookmarkContentItem_contentType
 ```
 
@@ -360,7 +359,7 @@ In the following part, we summarize the set of intents that we built for our cha
 
 - **SAMPLES**:
 ```
-- rate [“LastWeekTonight”](rateContentItem_contentItemName) [video](rateContentItem_contentType) [5 stars](rateContentItem_ratingValue)
+- rate [“LastWeekTonight”](rateContentItem_contentItemName) [video](rateContentItem_contentType) [5 ](rateContentItem_ratingValue) stars
 ```
 
 ### INTENT: shareContentItem
