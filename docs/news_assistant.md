@@ -7,7 +7,7 @@ In order to determine the intents, we talked to a group of people to understand 
 Based on this scenario, we summarized the set of intents that we built for our chatbot. We use [`Fountain`](https://github.com/tzano/fountain) a Natural Language Data Augmentation Tool for Conversational Systems to generate the training dataset.
 
 
-If you are a researcher, a data journalist or a developer, you can directly download and use the [**News Chatbot Training Dataset**] or expand the `Fountain` template [that can be accessed here](https://github.com/tzano/wren/blob/master/wren/data/wren_training_gen_fountain.yaml) and add more intents in a way that meets your requirements. 
+If you are a researcher, a data journalist or a developer, you can directly download and use the [**News Chatbot Training Dataset**](https://github.com/tzano/wren/blob/master/wren/data/wren_utterances.json) or expand the `Fountain` template [that can be accessed here](https://github.com/tzano/wren/blob/master/wren/data/wren_training_gen_fountain.yaml) and add more intents in a way that meets your requirements. 
 
 Below, you find a summary on all the intents used in the project. 
 
