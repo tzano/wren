@@ -14,7 +14,10 @@ Based on this scenario, we summarized the set of intents that we built for our c
 
 If you are a researcher, a data journalist or a developer, you can directly download and use the [**News Chatbot Training Dataset**](https://github.com/tzano/wren/blob/master/wren/data/wren_utterances.json) or expand the `Fountain` template [that can be accessed here](https://github.com/tzano/wren/blob/master/wren/data/wren_training_gen_fountain.yaml) and add more intents in a way that meets your requirements. 
 
-All the technical steps required to build and train the model are described [here](https://github.com/tzano/wren). We also included a containerized version of [the tool in this folder](https://github.com/tzano/wren/tree/master/docker). You can build it using [`docker-compose`](https://github.com/tzano/wren#getting-started). 
+All the technical steps required to build and train the model are described [here](https://github.com/tzano/wren). We also included a containerized version of [the tool in this folder](https://github.com/tzano/wren/tree/master/docker). You can build it using [`docker-compose`](https://github.com/tzano/wren#getting-started). Figure 2. shows a screen shot of Wren Slack Chatbot.
+
+![ScreenShot](/docs/images/wren_slack.png)
+**Figure 2.** Wren Slack Chatbot
 
 Below, you find a summary on all the intents used in the project. 
 
