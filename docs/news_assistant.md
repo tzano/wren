@@ -1,17 +1,24 @@
-# Building News Chatbot Training Dataset
+# How to train & build a Conversational News Chatbot
 
-Wren is a tool that enables users to discover and explore daily news stories. As part of the project, we built a Chatbot that is able to understand the intentions behind the user's queries, and provide releavant news stories. However, Chatbots are only as good as the training they are given. Building a representative set of intents is an important process and one that requires iteration. 
+Wren is a tool that enables users to discover and explore daily news stories. The tool can monitor and capture news content from a list of news sources, use NLP technology to enrich news discovery, and store data to easily source and search the enriched news data through conversational interfaces. The general view of the system is depicted in Figure 1.
 
-In order to determine the intents, we talked to a group of people to understand how they use assistants (like Alexa, Google Home) to discover and explore news. At the end of the session, we came out with a generic scenario. On a specific time during the day, users look for News Content (`Articles`, `Podcasts`, `TV shows`) based on different factors (They look for a specific `Topic`, news in certain `Time` or `Place`, or articles that discusses a `Person`). Once they find the right headline, they select a content Item to read, listen or watch it. After interacting with the content, users try to bookmark it or share the content item on social platforms.
+![ScreenShot](/docs/images/wren_news_analytics.png)
+**Figure 1.** Wren Technical Architecture 
+
+As part of the project, we built a Conversational News Chatbot that is able to understand the intentions behind the user's queries, and provide releavant news stories. However, Chatbots are only as good as the training they are given. Building a representative set of intents is an important process and one that requires iteration.
+
+In order to determine the intents, we talked to a group of people to understand how they use home assistants (like Alexa, Google Home) to discover and explore news. At the end of the session, we came out with a generic scenario. On a specific time during the day, users look for News Content (`Articles`, `Podcasts`, `TV shows`) based on different factors (They look for a specific `Topic`, news in certain `Time` or `Place`, or articles that discusses a `Person`). Once they find the right headline, they select a content Item to read, listen or watch it. After interacting with the content, users try to bookmark it or share the content item on social platforms.
 
 Based on this scenario, we summarized the set of intents that we built for our chatbot. We use [`Fountain`](https://github.com/tzano/fountain) a Natural Language Data Augmentation Tool for Conversational Systems to generate the training dataset.
 
 
 If you are a researcher, a data journalist or a developer, you can directly download and use the [**News Chatbot Training Dataset**](https://github.com/tzano/wren/blob/master/wren/data/wren_utterances.json) or expand the `Fountain` template [that can be accessed here](https://github.com/tzano/wren/blob/master/wren/data/wren_training_gen_fountain.yaml) and add more intents in a way that meets your requirements. 
 
+All the technical steps required to build and train the model are described [here](https://github.com/tzano/wren). We also included a containerized version of [the tool in this folder](https://github.com/tzano/wren/tree/master/docker). You can build it using [`docker-compose`](https://github.com/tzano/wren#getting-started). 
+
 Below, you find a summary on all the intents used in the project. 
 
-## Find News Content (articles/podcasts/TV shows) or filter based on different mediums (Topic/Time/Place/Person)
+## Find News Content (articles/podcasts/TV shows) or filter based on `Time`, `Place`, `People` & `Topic`
 
 ### INTENT: findNewsContent
 
