@@ -1,11 +1,11 @@
-# How to train & build a Conversational News Chatbot
+# How to train & build a News Chatbot
 
 Wren is a tool that enables users to discover and explore daily news stories. The tool can monitor and capture news content from a list of news sources, use NLP technology to enrich news discovery, and store data to easily source and search the enriched news data through conversational interfaces. The general view of the system is depicted in Figure 1.
 
 ![ScreenShot](/docs/images/wren_news_analytics.png)
 **Figure 1.** Wren Technical Architecture 
 
-As part of the project, we built a Conversational News Chatbot that is able to understand the intentions behind the user's queries, and provide releavant news stories. However, Chatbots are only as good as the training they are given. Building a representative set of intents is an important process and one that requires iteration.
+As part of the project, we built a News Chatbot that is able to understand the intentions behind the user's queries, and provide releavant news stories. However, Chatbots are only as good as the training they are given. Building a representative set of intents is an important process and one that requires iteration.
 
 In order to determine the intents, we talked to a group of people to understand how they use home assistants (like Alexa, Google Home) to discover and explore news. At the end of the session, we came out with a generic scenario. On a specific time during the day, users look for News Content (`Articles`, `Podcasts`, `TV shows`) based on different factors (They look for a specific `Topic`, news in certain `Time` or `Place`, or articles that discusses a `Person`). Once they find the right headline, they select a content Item to read, listen or watch it. After interacting with the content, users try to bookmark it or share the content item on social platforms.
 

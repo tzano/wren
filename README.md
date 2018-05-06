@@ -60,12 +60,14 @@ The idea is to cover the main and the most reliable news sources around the worl
 
 ### Getting Started
 
-You can find all the commands to run `Wren` in `Makefile`. There is a `docker-compose` files that includes all the services
+You can find all the commands to run `Wren` in `Makefile`. There is a `docker-compose` file to launch all the services
 
 - Build
 ```bash
 $ build
 ```
+
+alternatively, you can navigate to `docker folder`, build the images `docker-compose build` and launch the services `docker-compose up -d` 
 
 - Check the existing containers 
 ```bash
@@ -81,6 +83,7 @@ $ docker exec -it wren_app sh
 ```bash
 $ docker inspect docker_wren_network
 ```
+
 - Train your NLU model, you will find it under `./model/` folder
 ```bash
 python -m rasa_nlu.train -c config/nlu_config.json
@@ -88,7 +91,7 @@ python -m rasa_nlu.train -c config/nlu_config.json
 
 - Test Rasa Server
 ```bash
-curl 'http://<SERVER>:5000/status'
+curl 'http://<SERVER>:<PORT>/status'
 ```
 
 
