@@ -46,14 +46,14 @@ services:
     networks:
       - wren_network
 
-   app:
-     build: ./wren_app/.
-     container_name: wren_app
-     ports:
-       - 5001:5001
-     tty: true
-     volumes:
-       - ../:/usr/src/app
+  app:
+    build: wren_app/.
+    container_name: wren_app
+    ports:
+      - 5001:5001
+    tty: true
+    volumes:
+      - ../:/usr/src/app
     links:
       - mongodb
       - kafka
@@ -63,9 +63,8 @@ services:
       - kafka
       - mongodb
       - elasticsearch
-      # - nlu_server
-     networks:
-       - wren_network
+    networks:
+      - wren_network
 
 networks:
   wren_network:
